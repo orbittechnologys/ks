@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz@16..144&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+.abtHero-wrapper {
+    position: relative;
+}
+
+.image-overlay {
+    position: relative;
+    /* display: inline-block; */
+}
+
+.image-overlay img {
+    display: block;
+}
+
+.parallax-container {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.choreographer-text {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    letter-spacing: 2pt;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.768);
+    font-weight: bolder;
+    padding: 0px 0px;
+}
+
+.splide__arrow--prev,
+.splide__arrow--next {
+    display: none;
+}
+
+.splide__pagination__page {
+    background-color: rgb(255, 255, 0);
+    border: 1PX solid rgb(252, 188, 12);
+}
+
+.splide__pagination__page.is-active {
+    background-color: rgb(255, 221, 0);
+}
+
+/* navbar */
+
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FCB541;
+}
+
+.navbar-toggler {
+    border: 0 !important;
+    padding: 2rem !important;
+    cursor: pointer;
+    margin: 0;
+    width: 30px;
+    height: 35px;
+    outline: none !important;
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before,
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
+    transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+    transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+    top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+    transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    transform: rotate(-45deg);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background: #545454;
+    overflow-x: visible;
+    transition: background 10ms 300ms ease;
+    display: block;
+    width: 30px;
+    height: 2px;
+    position: relative;
+}
+
+.navbar-toggler .navbar-toggler-icon:before,
+.navbar-toggler .navbar-toggler-icon:after {
+    transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background: #545454;
+    width: 30px;
+    height: 2px;
+    content: "";
+}
+
+.navbar-toggler .navbar-toggler-icon::before {
+    top: -8px;
+}
+
+.navbar-toggler .navbar-toggler-icon::after {
+    top: 8px;
+}
+
+.accordion {
+    --bs-accordion-btn-bg: #ffffff;
+    --bs-accordion-active-bg: mintcream;
+    --bs-accordion-active-color: #000000;
+    --bs-accordion-bg: mintcream;
+    --bs-accordion-color: #000000;
+    --bs-accordion-btn-focus-box-shadow: none;
+  }
+  
+  .accordion-item {
+    background-color: rgba(255, 255, 255, 0) !important;  
+    border: none;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  .accordion-body {
+    color: #fff;
+    font-weight: bolder;
+    border: 1px solid #ffd814;
+  }
+  
+  .accordion-body p{
+    color: #fff;
+    font-weight: bolder;
+  }
+  
+  .accordion-button {
+    color: #fff;  
+    background-color: transparent;
+  }
+  .accordion-header button {
+    color: #fff;  
+    background-color: transparent;
+    border: 1px solid #ffd814;
+  }
+  
+  .accordion-header button::before {
+    display: none;  
+  }
+
+  .accordion-header button[aria-expanded="true"] {
+    background-color: transparent;
+    color: #fff;  
+  }
+
+  .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+    transition: all 0.5s;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+  }
+ 
+ 
+.splide__slide {
+    position: relative;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: auto;
+}
+
+.splide__slide figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.small-desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(197, 158, 112, 1);
+    color: white;
+    padding: 8px;
+    font-size: 13px;
+    display: none;
+    transition: .3s;
+}
+
+.splide__slide:hover .figcaption {
+    display: none;
+}
+
+.splide__slide:hover .small-desc {
+    display: block;
+    opacity: 1;
+    transition: .6s;
+}
+
+/* Footer */
+
+.bg-footer {
+    background: rgb(0, 0, 0);
+    padding: 50px 0 30px;
+}
+
+.footer-heading {
+    letter-spacing: 2px;
+}
+
+.footer-link a {
+    color: rgba(197, 158, 112, 1);
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer-link a:hover {
+    color: #ffd814;
+    transition: .2s;
+}
+
+.contact-info {
+    color: #0fafff;
+    font-size: 14px;
+}
+
+.footer-heading {
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer-heading:after {
+    content: '';
+    width: 50px;
+    border-bottom: 1px solid #FFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    border-bottom: 1px solid #ffd814;
+}
+
+/* testimonial */
+.custom-font {
+    font-family: 'Montagu Slab', serif;
+}
+
+.test-card-left {
+    background-color: #1A5032;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: auto;
+    width: 100%;
+}
+
+.test-card {
+    background-color: #a1b3b671;
+    border-radius: 12px;
+    height: auto;
+    width: 100%;
+}
+
+/* hero */
+/* Add the following CSS to your stylesheets or inline style */
+.hero-wrapper {
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.076);
+    /* Adjust the opacity as needed */
+}
+
+.hero-overlay p {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.abt-wrapper {
+    position: relative;
+    margin-top: 80px;
+}
+
+.abt-overlay {
+    color: #FFF;
+    position: absolute;
+    top:0;
+    /* left: 0; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.076);
+    /* Adjust the opacity as needed */
+}
+
+.abt-overlay p {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .splide__slide figcaption {
+        font-size: 8px !important;
+    }
+
+    .splide__slide figcaption p {
+        font-size: 6px !important;
+    }
+
+    .small-desc {
+        font-size: 5px;
+    }
+
+    .splide__arrow--prev,
+    .splide__arrow--next {
+        display: none;
+    }
+
+    .splide__pagination__page {
+        background-color: yellow;
+    }
+
+    .splide__pagination__page.is-active {
+        background-color: brown;
+    } 
+    .choreographer-text {
+        position: absolute;
+        bottom: 0px !important;
+        left: 50%;
+        letter-spacing: 1pt;
+        transform: translateX(-50%);
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.768);
+        font-weight: bolder;
+        font-size: 1rem !important;
+        padding: 0px 0px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 1rem !important;
+    }
+
+    .abt-overlay p {
+        font-size: 0.40rem !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px !important;
+    }
+
+    .map iframe{
+        height: 300px;
+        width: 300px;
+        margin-bottom: 45px;
+    }
+}
