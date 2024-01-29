@@ -116,7 +116,7 @@ function Home() {
                     </p> 
                 </div>*/}
 
-        <div className="d-flex justify-content-around align-item-center">
+        <div className="d-flex justify-content-around align-item-center ">
           <div className="" style={{ width: "32em", height: "28em" }}>
             <div>
               <img
