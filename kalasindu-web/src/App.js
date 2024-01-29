@@ -8,6 +8,7 @@ import Support from "./pages/Support";
 import Events from "./pages/Events";
 import Education from "./pages/Education";
 import Collaborate from "./pages/Collaborate";
+import Gallery from "./pages/Gallery";
 
 export default function App() {
   return (
@@ -18,7 +19,7 @@ export default function App() {
         <Route exact path="/events" element={<Events />} />  
         <Route exact path="/education" element={<Education />} />
         <Route exact path="/collaborate" element={<Collaborate />} />
-
+        <Route exact path="/gallery" element={<Gallery />} /> //* Gallery
         <Route exact path="/support" element={<Support />} />
       </Routes>
     </BrowserRouter>
