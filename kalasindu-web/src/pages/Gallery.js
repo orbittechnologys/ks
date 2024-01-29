@@ -1,7 +1,9 @@
 import React from 'react';
 import '../assets/styles/Gallery.css';
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer'
 import { Link } from 'react-scroll';
+
 
 const Gallery = () => {
   const galleryItems = [
@@ -19,32 +21,51 @@ const Gallery = () => {
   return (
     <>
     <Navbar />
-    <div className="container mt-5">
-      <div className="row">
-        {galleryItems.map((item) => (
-          <div key={item.id} className="col-md-3 mb-4">
-            <div className="gallery-item">
-              <img
-                src={item.imageUrl}
-                alt={item.text}
-                className="img-fluid"
-              />
-              <div className="overlay">
-                <p className="text-overlay">{item.text}</p>
+    <div className="gallery-container">
+      <div className="container mt-5">
+        <div className="row">
+          {galleryItems.map((item) => (
+            <div key={item.id} className="col-md-3 mb-4">
+              <div className="gallery-item">
+                <img src={item.imageUrl} alt={item.text} className="img-fluid" />
+                <div className="overlay">
+                  <p className="text-overlay">{item.text}</p>
+                </div>
+                <Link
+                  to={`section-${item.id}`}
+                  smooth={true}
+                  onClick={() => handleClick(item.id)}
+                >
+                  <div className="click-overlay"></div>
+                </Link>
               </div>
-              <Link
-                to={`section-${item.id}`}
-                smooth={true}
-                onClick={() => handleClick(item.id)}
-              >
-                <div className="click-overlay"></div>
-              </Link>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
-    </>
+
+    {/* Sections and Grid */}
+    {galleryItems.map((item) => (
+      <div key={`section-${item.id}`} id={`section-${item.id}`} className="mt-5 grid-section">
+        <h2>{item.text}</h2>
+        <p>Description for {item.text} </p>
+
+        <div className="grid-container">
+          {/* Example grid with multiple images */}
+          <div className="grid-item">
+            <img src={item.imageUrl} alt={item.text} className="img-fluid" />
+          </div>
+          {/* Add more images as needed */}
+          <img src={item.imageUrl} alt={item.text} className="img-fluid" />
+          <img src={item.imageUrl} alt={item.text} className="img-fluid" />
+          <img src={item.imageUrl} alt={item.text} className="img-fluid" />
+        </div>
+      </div>
+    ))}
+
+    <Footer />
+  </>
   );
 };
 

@@ -3,6 +3,11 @@ body {
     margin: 0; 
     padding: 0; 
   }
+.gallery-container {
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 80px;
+  }
 .gallery-item {
     position: relative;
     overflow: hidden;
@@ -11,7 +16,7 @@ body {
   .gallery-item img {
     width: 100%;
     height: auto;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in;
   }
   
   .gallery-item:hover img {
@@ -52,3 +57,64 @@ body {
     height: 100%;
     cursor: pointer;
   }
+
+/* Grid styling */
+.grid-section {
+  text-align: center;
+  color: #ffff;
+  height: 100vh;
+}
+
+.grid-section h2 {
+  margin-bottom: 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px; /* Adjust the gap as needed */
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1);
+}
+
+.grid-section p {
+  color: white;
+}
+
+/* Other styles for your gallery item */
+.gallery-container {
+  /* Add any additional styles for your gallery container */
+}
+
+.gallery-item {
+  /* Add any additional styles for your gallery items */
+}
+
+.overlay {
+  /* Add styles for the overlay if needed */
+}
+
+.text-overlay {
+  /* Add styles for the text overlay if needed */
+}
+
+.click-overlay {
+  /* Add styles for the click overlay if needed */
+}
+
+/* Add any other styles as per your design requirements */
+

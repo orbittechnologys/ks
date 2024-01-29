@@ -131,6 +131,27 @@
     top: 8px;
 }
 
+.circle-date {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 6em;
+    height: 6em;
+    background-color:#FCB541;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none /* Optional: Add a border for better visibility */
+  }
+  
+  .circle-date-text {
+    font-size: 1.2em;
+    font-weight:900;
+    margin: 0;
+  }
+
 .accordion {
     --bs-accordion-btn-bg: #ffffff;
     --bs-accordion-active-bg: mintcream;

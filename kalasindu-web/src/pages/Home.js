@@ -13,6 +13,9 @@ import { SlCalender } from "react-icons/sl";
 import { FaRegClock } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
 import { GoArrowUpRight } from "react-icons/go";
+import { FaFacebook } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { FaYoutube } from "react-icons/fa6";
 import "aos/dist/aos.css";
 
 function Home() {
@@ -56,49 +59,31 @@ function Home() {
 
   return (
     <>
-      <Navbar 
-        active={"Home"}
-      />
+      <Navbar active={"Home"} />
       <section className="hero-wrapper position-relative">
         <img src={heroImg} className="img-fluid w-100" alt="Hero Image" />
-        <div className="hero-overlay d-flex align-items-center justify-content-center">
-          <h2
-            className="display-4 p-3 text-white text-center fw-bolder"
+        <div className="hero-overlay d-flex align-items-center justify-content-around">
+          <div
+            className="display-5 p-4 text-white text-center fw-bolder"
             data-aos="fade-up"
             data-aos-duration="2800"
           >
-            Parampara is like an umbilical cord that connects dancers to the
-            beginnings of their art form.
-            <br></br>-Poornima Gururaj
-          </h2>
-        </div>
-      </section>
-
-      <section style={{ backgroundColor: "rgba(251, 188, 5, 1)" }}>
-        <div className="container p-4">
-          <div className="row">
-            <div className="col-lg-6 d-flex justify-content-center align-items-center">
-              <p className="fs-2 fw-bolder">
-                Count every second until the next Event
-              </p>
-            </div>
-            <div className="col-lg-6 d-flex justify-content-around align-items-center mb-0">
-              <p className="fs-3 fw-bolder text-center mb-0" id="days">
-                {countdown.days}
-                <p className="fs-5">Days</p>
-              </p>
-              <p className="fs-3 fw-bolder text-center mb-0" id="hours">
-                {countdown.hours}
-                <p className="fs-5">Hours</p>
-              </p>
-              <p className="fs-3 fw-bolder text-center mb-0" id="minutes">
-                {countdown.minutes}
-                <p className="fs-5">Minutes</p>
-              </p>
-              <p className="fs-3 fw-bolder text-center mb-0" id="seconds">
-                {countdown.seconds}
-                <p className="fs-5">Seconds</p>
-              </p>
+            <FaFacebook />
+            <br />
+            <RiInstagramFill />
+            <FaYoutube />
+          </div>
+          <div className="d-flex flex-column justify-content-end">
+            <div>
+              <h2
+                className="display-4 p-3 text-white text-center fw-bolder"
+                data-aos="fade-up"
+                data-aos-duration="2800"
+              >
+                Parampara is like an umbilical cord that connects dancers to the
+                beginnings of their art form.
+                <br></br>-Poornima Gururaj
+              </h2>
             </div>
           </div>
         </div>
@@ -117,13 +102,22 @@ function Home() {
                 </div>*/}
 
         <div className="d-flex justify-content-around align-item-center">
-          <div className="" style={{ width: "32em", height: "28em" }}>
+          <div
+            className=""
+            style={{ width: "32em", height: "28em", position: "relative" }}
+          >
             <div>
               <img
                 className="rounded-top img-fluid"
                 src={Hcard1}
                 style={{ width: "32em", height: "13.4375em" }}
               ></img>
+            </div>
+            <div className="circle-date">
+              <p className="circle-date-text">
+                25 th <br />
+                Sept
+              </p>
             </div>
             <div className="p-3 mb-2 bg-white text-dark rounded">
               <h3 className="fw-bold">Nirantara Narmada</h3>
@@ -156,21 +150,30 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="" style={{ width: "32em", height: "28em" }}>
+          <div
+            className=""
+            style={{ width: "32em", height: "28em", position: "relative" }}
+          >
             <div>
               <img
-                className="rounded-top"
+                className="rounded-top img-fluid"
                 src={Hcard2}
                 style={{ width: "32em", height: "13.4375em" }}
               ></img>
             </div>
+            <div className="circle-date">
+              <p className="circle-date-text">
+                25 th <br />
+                Sept
+              </p>
+            </div>
             <div className="p-3 mb-2 bg-white text-dark rounded">
-              <h3 className="fw-bold"> Nirantara Narmada </h3>
+              <h3 className="fw-bold">Nirantara Narmada</h3>
               <p className="fw-bold">Artist: Smt. Ramavaidyanathan</p>
               <div>
-                <div className="d-flex justify-content-start ">
+                <div className="d-flex justify-content-start">
                   <SlCalender className="mt-1" />{" "}
-                  <p className="ms-2">Sunday, 5th Sept, 2023</p>
+                  <p className="ms-2 mb-2">Sunday, 5th Sept, 2023</p>
                 </div>
 
                 <div className="d-flex justify-content-start ">
@@ -190,7 +193,7 @@ function Home() {
                   >
                     more info <GoArrowUpRight />
                   </a>
-                  <p className="fw-bold">Rs 200</p>
+                  <p className="fw-bold">FREE</p>
                 </div>
               </div>
             </div>
@@ -214,7 +217,6 @@ function Home() {
             <div className="col-lg-6 d-flex justify-content-center align-items-center">
               <div>
                 <p
-                  
                   className="display-6 text-white "
                   data-aos="fade-up"
                   data-aos-duration="1500"
@@ -280,7 +282,7 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="accordion-item">
+                <div className="accordion-item" style={{ border: "none" }}>
                   <h2
                     className="accordion-header"
                     id="headingTwo"
@@ -316,7 +318,7 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="accordion-item">
+                <div className="accordion-item" style={{ border: "none" }}>
                   <h2
                     className="accordion-header"
                     id="headingThree"
@@ -353,7 +355,7 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="accordion-item">
+                <div className="accordion-item" style={{ border: "none" }}>
                   <h2
                     className="accordion-header"
                     id="headingFour"
@@ -390,7 +392,7 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="accordion-item">
+                <div className="accordion-item" style={{ border: "none" }}>
                   <h2
                     className="accordion-header"
                     id="headingFive"
@@ -438,7 +440,11 @@ function Home() {
 
       {/* <!-- video --> */}
       <section
-        style={{ backgroundColor: "rgba(36, 17, 10, 1)", height: "100vh", paddingTop:"8.5em" }}
+        style={{
+          backgroundColor: "rgba(36, 17, 10, 1)",
+          height: "100vh",
+          paddingTop: "8.5em",
+        }}
       >
         <div className="container p-3 align-middle">
           <h2
@@ -467,7 +473,9 @@ function Home() {
       </section>
 
       {/* <!-- contact --> */}
-      <section style={{ backgroundColor: "rgba(92, 61, 50, 1)", paddingTop:"8.5em" }}>
+      <section
+        style={{ backgroundColor: "rgba(92, 61, 50, 1)", paddingTop: "8.5em" }}
+      >
         <div class="container p-5 map d-flex justify-content-center">
           <div class="">
             <h2 class="text-center text-white">Come visit us</h2>
