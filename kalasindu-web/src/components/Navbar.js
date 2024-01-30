@@ -5,7 +5,7 @@ import logo from '../assets/images/logo.png'
 function Navbar() {
   return (
     <>
-     <nav className="navbar custom-nav navbar-expand-lg navbar-white" style={{background: 'rgba(0, 0, 0, 1)'}}>
+     <nav className="navbar custom-nav navbar-expand-lg navbar-white" style={{background: 'rgba(0, 0, 0, 1)', position:'fixed', top:'0', zIndex:'999999', width:'100%'}}>
         <div className="container">
             <a className="navbar-brand" href="/">
             <img src={logo} height='60' />

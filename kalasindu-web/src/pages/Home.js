@@ -64,7 +64,7 @@ function Home() {
         <img src={heroImg} className="img-fluid w-100" alt="Hero Image" />
         <div className="hero-overlay d-flex align-items-center justify-content-around">
           <div
-            className="display-5 p-4 text-white text-center fw-bolder"
+            className="display-6 p-5 text-white text-center fw-bolder"
             data-aos="fade-up"
             data-aos-duration="2800"
           >
@@ -76,13 +76,13 @@ function Home() {
           <div className="d-flex flex-column justify-content-end">
             <div>
               <h2
-                className="display-4 p-3 text-white text-center fw-bolder"
+                className="display-5 p-5 text-white text-center fw-bolder"
                 data-aos="fade-up"
                 data-aos-duration="2800"
               >
                 Parampara is like an umbilical cord that connects dancers to the
                 beginnings of their art form.
-                <br></br>-Poornima Gururaj
+                <br/><br/><span className="d-flex justify-content-end">-Poornima Gururaj</span>  
               </h2>
             </div>
           </div>
