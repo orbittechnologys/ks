@@ -68,7 +68,7 @@ const Team = () => {
                   href="#"
                   style={{ cursor: "pointer" }}
                   data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
+                  data-bs-target="#exampleModal7"
                   className="text-decoration-none text-center text-dark fw-bolder"
                 >
                   Know more
@@ -110,7 +110,7 @@ const Team = () => {
                   href="#"
                   style={{ cursor: "pointer" }}
                   data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
+                  data-bs-target="#exampleModal2"
                   className="text-decoration-none text-center text-dark fw-bolder"
                 >
                   Know more
@@ -152,7 +152,7 @@ const Team = () => {
                   href="#"
                   style={{ cursor: "pointer" }}
                   data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
+                  data-bs-target="#exampleModal3"
                   className="text-decoration-none text-center text-dark fw-bolder"
                 >
                   Know more
@@ -194,7 +194,7 @@ const Team = () => {
                   href="#"
                   style={{ cursor: "pointer" }}
                   data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
+                  data-bs-target="#exampleModal4"
                   className="text-decoration-none text-center text-dark fw-bolder"
                 >
                   Know more
@@ -236,7 +236,7 @@ const Team = () => {
                   href="#"
                   style={{ cursor: "pointer" }}
                   data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
+                  data-bs-target="#exampleModal5"
                   className="text-decoration-none text-center text-dark fw-bolder"
                 >
                   Know more
@@ -278,7 +278,7 @@ const Team = () => {
                   href="#"
                   style={{ cursor: "pointer" }}
                   data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
+                  data-bs-target="#exampleModal6"
                   className="text-decoration-none text-center text-dark fw-bolder"
                 >
                   Know more
@@ -337,7 +337,7 @@ const Team = () => {
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
-      >
+        >
         <div class="modal-dialog">
           <div
             class="modal-content"
@@ -402,13 +402,9 @@ const Team = () => {
               ></button>
             </div>
             <div class="modal-body">
-              <h4>Gowri Vishwanath2</h4>
+              <h4>Uday kumar </h4>
               <p>
-                Gowri Vishwanath is a highly experienced music faculty with 40
-                years of teaching experience. She started learning Carnatic
-                music at the age of 4 from her father and went on to study under
-                renowned musicians like Narasimha Murthy, Jayashree
-                Parthasarathy.
+              Chi Udaykumar P is a seasoned dance teacher and performer who has been an assistant faculty at Kalasindhu Academy for the past 12 years. He trained under esteemed teachers like Smt Aarthi Suresh, Smt Sandhya and Shri Kiran Sumbramanyam, and Shri P Praveen Kumar
               </p>
             </div>
             <div class="modal-footer">
@@ -449,13 +445,9 @@ const Team = () => {
               ></button>
             </div>
             <div class="modal-body">
-              <h4>Gowri Vishwanath3</h4>
+              <h4>Deepthi S</h4>
               <p>
-                Gowri Vishwanath is a highly experienced music faculty with 40
-                years of teaching experience. She started learning Carnatic
-                music at the age of 4 from her father and went on to study under
-                renowned musicians like Narasimha Murthy, Jayashree
-                Parthasarathy.
+              She is a passionate Bharatanatyam dancer with over 20 years of experience. Under the guidance of Guru Smt Poornima Gururaja at Kalasindhu Academy, she has mastered the intricate movements and expressive storytelling of Bharatanatyam.
               </p>
             </div>
             <div class="modal-footer">
@@ -496,13 +488,13 @@ const Team = () => {
               ></button>
             </div>
             <div class="modal-body">
-              <h4>Gowri Vishwanath4</h4>
+              <h4>Lavanthi S </h4>
               <p>
-                Gowri Vishwanath is a highly experienced music faculty with 40
-                years of teaching experience. She started learning Carnatic
-                music at the age of 4 from her father and went on to study under
-                renowned musicians like Narasimha Murthy, Jayashree
-                Parthasarathy.
+              She is a skilled choreographer, performer, and theatre artist
+              trained under Poornima Gururaja at Kalasindhu for 16 years. With
+              accomplishments including clearing state examswith distinctions 
+              receiving the CCRT Scholarship, and performing on national
+              platforms
               </p>
             </div>
             <div class="modal-footer">
@@ -543,13 +535,13 @@ const Team = () => {
               ></button>
             </div>
             <div class="modal-body">
-              <h4>Gowri Vishwanath</h4>
+              <h4>Anagha kumar</h4>
               <p>
-                Gowri Vishwanath is a highly experienced music faculty with 40
-                years of teaching experience. She started learning Carnatic
-                music at the age of 4 from her father and went on to study under
-                renowned musicians like Narasimha Murthy, Jayashree
-                Parthasarathy.
+              Anagha Kumar is currently pursuing a BSc in Yogic Sciences.
+              Under the guidance of Guru Poornima Gururaj for 12 years, she
+              has honed her skills in Bharatanatyam. Anagha has participated
+              in workshops, performed at various venues, and is now a faculty
+              member at Kalasindhu
               </p>
             </div>
             <div class="modal-footer">
@@ -590,13 +582,13 @@ const Team = () => {
               ></button>
             </div>
             <div class="modal-body">
-              <h4>Gowri Vishwanath</h4>
+              <h4>Samvitha</h4>
               <p>
-                Gowri Vishwanath is a highly experienced music faculty with 40
-                years of teaching experience. She started learning Carnatic
-                music at the age of 4 from her father and went on to study under
-                renowned musicians like Narasimha Murthy, Jayashree
-                Parthasarathy.
+              Samvitha Dev is a dedicated and passionate Bharatanatyam dancer,
+              with a journey spanning 10 years. Having completed her
+              Rangapravesha in 2022 under the guidance of her Guru, she has
+              now embarked on the fulfilling path of teaching dance at
+              Kalasindhu
               </p>
             </div>
             <div class="modal-footer">
@@ -637,13 +629,12 @@ const Team = () => {
               ></button>
             </div>
             <div class="modal-body">
-              <h4>Gowri Vishwanath</h4>
+              <h4>Dr. Nagalakshmi</h4>
               <p>
-                Gowri Vishwanath is a highly experienced music faculty with 40
-                years of teaching experience. She started learning Carnatic
-                music at the age of 4 from her father and went on to study under
-                renowned musicians like Narasimha Murthy, Jayashree
-                Parthasarathy.
+              Dr. Nagalakshmi S is a highly accomplished individual with an
+              M.A. and Ph.D. in Sanskrit. Currently serving as an assistant
+              professor at CHRIST (Deemed to be University), she possesses a
+              commendable 16 years of teaching experience
               </p>
             </div>
             <div class="modal-footer">

@@ -65,15 +65,13 @@ const Testimonial = () => {
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
-                <h1 className="mt-0 mb-2">Life skills</h1>
+                <h1 className="mt-0 mb-2">Truly meticulous</h1>
                 <p>
                   {" "}
-                  Aside from teaching dance, I like Mam's emphasis on disciple
-                  and life skills. I like how she encourages all children to
-                  learn. Every year, we look forward to Navarasa Navaratri and
-                  Niranthara Narmada in Kalasindhu. The annual day, which began
-                  this year, adds to the appeal of seeing all of the children
-                  perform on one stage. -Veena ( Parent)
+                  I CONGRATULATE Poornima and her team of friends and colleagues
+                  for this Venture , the organisation has been truly meticulous.
+                  Every detail being attended to with such devotion, care and
+                  efficiency. -Alarmel Valli (Artist)
                 </p>
               </div>
             </SplideSlide>
@@ -83,15 +81,15 @@ const Testimonial = () => {
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
-                <h1 className="mt-0 mb-2">Life skills</h1>
+                <h1 className="mt-0 mb-2"> Well crafted</h1>
                 <p>
                   {" "}
-                  Aside from teaching dance, I like Mam's emphasis on disciple
-                  and life skills. I like how she encourages all children to
-                  learn. Every year, we look forward to Navarasa Navaratri and
-                  Niranthara Narmada in Kalasindhu. The annual day, which began
-                  this year, adds to the appeal of seeing all of the children
-                  perform on one stage. -Veena ( Parent)
+                  Poornima’s students showcased the style with well practiced
+                  technique in the production 'Shivotsavam'. The narratives was
+                  well crafted with simple aesthetic appeal. All the dancers
+                  enacted their roles with wonderful grace executing right
+                  proportions of nritta and abhinaya. -Veena Murthy Vijay
+                  (Artist)
                 </p>
               </div>
             </SplideSlide>
@@ -101,15 +99,14 @@ const Testimonial = () => {
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
-                <h1 className="mt-0 mb-2">Life skills</h1>
+                <h1 className="mt-0 mb-2">Symmetry of dancers</h1>
                 <p>
                   {" "}
-                  Aside from teaching dance, I like Mam's emphasis on disciple
-                  and life skills. I like how she encourages all children to
-                  learn. Every year, we look forward to Navarasa Navaratri and
-                  Niranthara Narmada in Kalasindhu. The annual day, which began
-                  this year, adds to the appeal of seeing all of the children
-                  perform on one stage. -Veena ( Parent)
+                  Fresh ideas aplenty in building up the theme, easily
+                  comprehensible, coherent verbalization, clear visualization of
+                  the concept and neat symmetry of dancers was Guhyam in
+                  totality. Poornima Gururaja's ideas connected well with the
+                  audience. -Jyothi Raghuram (Artist)
                 </p>
               </div>
             </SplideSlide>
@@ -119,15 +116,85 @@ const Testimonial = () => {
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
-                <h1 className="mt-0 mb-2">Life skills</h1>
+                <h1 className="mt-0 mb-2">Most happiest </h1>
                 <p>
                   {" "}
-                  Aside from teaching dance, I like Mam's emphasis on disciple
-                  and life skills. I like how she encourages all children to
-                  learn. Every year, we look forward to Navarasa Navaratri and
-                  Niranthara Narmada in Kalasindhu. The annual day, which began
-                  this year, adds to the appeal of seeing all of the children
-                  perform on one stage. -Veena ( Parent)
+                  I am the most happiest to have watched Poornima Gururaja's
+                  choreographies on such lesser known poets of our Karnataka. It
+                  is an honour to have experienced her art and Direction to her
+                  student' s Dance . -RK padmanabha (reknowned musician and
+                  Guru)
+                </p>
+              </div>
+            </SplideSlide>
+
+            <SplideSlide className="me-3">
+              <div className="text-white test-card p-3 m-5 ">
+                <span className="text-white custom-font mb-0 mt-0 display-1">
+                  "
+                </span>
+                <h1 className="mt-0 mb-2">Safe space </h1>
+                <p>
+                  {" "}
+                  Everything is made very clear when it is being taught and we
+                  gain so much knowledge from learning about the pieces which
+                  makes us better dancers. I find Kalasindhu to be a safe space
+                  for me,and I'm grateful for the comfort and security this
+                  environment provides and that is one of the best experiences
+                  I've had here! :) -Stuthi vitta (Student)
+                </p>
+              </div>
+            </SplideSlide>
+
+            <SplideSlide className="me-3">
+              <div className="text-white test-card p-3 m-5 ">
+                <span className="text-white custom-font mb-0 mt-0 display-1">
+                  "
+                </span>
+                <h1 className="mt-0 mb-2">Growth </h1>
+                <p>
+                  {" "}
+                  I'm extremely fortunate and blessed to have a Guru like
+                  Poornima ma'am who is not just concerned about our growth in
+                  dance but even beyond. The workshops organized at class & the
+                  opportunities that we receive for performing at various places
+                  and competitions is a great exposure for every dancer's
+                  growth. -Anagha (Student)
+                </p>
+              </div>
+            </SplideSlide>
+
+            <SplideSlide className="me-3">
+              <div className="text-white test-card p-3 m-5 ">
+                <span className="text-white custom-font mb-0 mt-0 display-1">
+                  "
+                </span>
+                <h1 className="mt-0 mb-2">Holistic Education </h1>
+                <p>
+                  {" "}
+                  Every class is productive and I come back home every single
+                  time with something to ponder about with respect to my
+                  dancing. The music and Sanskrit classes conducted once a week
+                  also help in increasing our connect with the dance form.
+                  -Aarabhi (Student)
+                </p>
+              </div>
+            </SplideSlide>
+
+            <SplideSlide className="me-3">
+              <div className="text-white test-card p-3 m-5 ">
+                <span className="text-white custom-font mb-0 mt-0 display-1">
+                  "
+                </span>
+                <h1 className="mt-0 mb-2">Encouraging </h1>
+                <p>
+                  {" "}
+                  Kalasindhu has been like a second home to me. Maam has always
+                  pushed us to explore different art forms and has also given us
+                  the opportunity to learn from Chandrashekar sir, which is
+                  genuinely a unique and rare opportunity for any dancer. The
+                  entire faculty has always been encouraging, supportive, and
+                  caring. -Shriya D (Student)
                 </p>
               </div>
             </SplideSlide>

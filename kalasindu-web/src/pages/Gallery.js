@@ -1,72 +1,148 @@
 import React from 'react';
-import '../assets/styles/Gallery.css';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { Link } from 'react-scroll';
+import { HashLink as Link } from 'react-router-hash-link';
 
-
-const Gallery = () => {
-  const galleryItems = [
-    { id: 1, imageUrl: require('../assets/images/GM1.png'), text: 'Rangarpane' },
-    { id: 2, imageUrl: require('../assets/images/GM2.png'), text: 'Festivals' },
-    { id: 3, imageUrl: require('../assets/images/GM3.png'), text: 'Performance' },
-    { id: 4, imageUrl: require('../assets/images/GM4.png'), text: 'Events' },
-  ];
-
-  const handleClick = (id) => {
-    // Handle click logic, e.g., scroll to the section with id
-    // You can use react-scroll library for smooth scrolling
-  };
-
+function Gallery() {
   return (
     <>
-    <Navbar />
-    <div className="gallery-container">
-      <div className="container mt-5">
-        <div className="row">
-          {galleryItems.map((item) => (
-            <div key={item.id} className="col-md-3 mb-4">
-              <div className="gallery-item">
-                <img src={item.imageUrl} alt={item.text} className="img-fluid" />
-                <div className="overlay">
-                  <p className="text-overlay">{item.text}</p>
-                </div>
-                <Link
-                  to={`section-${item.id}`}
-                  smooth={true}
-                  onClick={() => handleClick(item.id)}
-                >
-                  <div className="click-overlay"></div>
-                </Link>
-              </div>
-            </div>
-          ))}
+      <Navbar />
+    <div>
+      <div style={{ display: 'flex', justifyContent: 'space-around', height:"100vh", marginTop:"120px" }}>
+        <div>
+          <Link smooth to="#section1"><img src={require("../assets/images/GM1.png")} alt="Image 1" /></Link>
         </div>
+        <div>
+          <Link smooth to="#section2"><img src={require("../assets/images/GM2.png")} alt="Image 2" /></Link>  
+        </div>
+        <div>
+          <Link smooth to="#section3"><img src={require("../assets/images/GM3.png")} alt="Image 3" /></Link>
+        </div>
+        <div>
+          <Link smooth to="#section4"><img src={require("../assets/images/GM4.png")} alt="Image 4" /></Link>
+        </div>
+      </div>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+      <div id="section1">
+        <h2>Section 1</h2>
+        <p>This is Section 1</p>
+      </div>
+
+      <div id="section2">
+        <h2>Section 2</h2>
+        <p>This is Section 2</p>
+      </div>
+
+      <div id="section3">
+        <h2>Section 3</h2>
+        <p>This is Section 3</p>
+      </div>
+
+      <div id="section4">
+        <h2>Section 4</h2>
+        <p>This is Section 4</p>
       </div>
     </div>
-
-    {/* Sections and Grid */}
-    {galleryItems.map((item) => (
-      <div key={`section-${item.id}`} id={`section-${item.id}`} className="mt-5 grid-section">
-        <h2>{item.text}</h2>
-        <p>Description for {item.text} </p>
-
-        <div className="grid-container">
-          {/* Example grid with multiple images */}
-          <div className="grid-item">
-            <img src={item.imageUrl} alt={item.text} className="img-fluid" />
-          </div>
-          {/* Add more images as needed */}
-          <img src={item.imageUrl} alt={item.text} className="img-fluid" />
-          <img src={item.imageUrl} alt={item.text} className="img-fluid" />
-          <img src={item.imageUrl} alt={item.text} className="img-fluid" />
-        </div>
-      </div>
-    ))}
-
-    <Footer />
-  </>
+    </>
   );
-};
+}
 
 export default Gallery;
