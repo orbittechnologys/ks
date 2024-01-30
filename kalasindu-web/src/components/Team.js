@@ -15,7 +15,7 @@ const Team = () => {
   const splideRef = useRef(null);
 
   return (
-    <section style={{ backgroundColor: "rgb(0, 0, 0)", height: "100vh" }}>
+    <section style={{ backgroundColor: "rgb(0, 0, 0)", height: "750px" }}>
       <div className="container p-5">
         <h2
           className="text-center mt-4 mb-4"

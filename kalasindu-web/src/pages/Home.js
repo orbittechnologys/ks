@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../assets/styles/core.css";
+import logo from '../assets/images/logo.png'
 import heroImg from "../assets/images/rsc.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -441,7 +442,7 @@ function Home() {
       {/* <!-- video --> */}
       <section
         style={{
-          backgroundColor: "rgba(36, 17, 10, 1)",
+          backgroundColor: "rgb(14, 14, 14)",
           height: "100vh",
           paddingTop: "8.5em",
         }}
@@ -474,50 +475,39 @@ function Home() {
 
       {/* <!-- contact --> */}
       <section
-        style={{ backgroundColor: "rgba(92, 61, 50, 1)", paddingTop: "8.5em" }}
-      >
-        <div class="container p-5 map d-flex justify-content-center">
+        style={{ backgroundColor: "#330A0A", paddingTop: "8em", height:'931px' }}
+        >
+        <h1 style={{color:'#C59E70', textAlign:'center'}}>Pick one way, to get in touch..</h1>
+        <div class="container p-5 map d-flex justify-content-between">
+          <div >
+          <div className="">
+            <ul className="list-unstyled footer-link mt-4 display-2">
+              <li><a href="tel:+91 9900579347" style={{fontSize:'25px'}}> <i className="bi bi-telephone me-2"></i> Whatsapp us or call us at 9900579347 </a></li>
+              <li><a href="mailto:Kalasindhu@gmail.com" style={{fontSize:'25px'}}><i className="bi bi-envelope me-2"></i> If you are old school, then email us at Kalasindhu@gmail.com </a></li>
+              <li><a href=" "style={{fontSize:'25px'}}> <i className="bi bi-instagram me-2" ></i>Social media lover ? Stalk our page and Dm us at Kalasindhu Academy </a></li>
+            </ul>
+          </div>
+          </div>
           <div class="">
-            <h2 class="text-center text-white">Come visit us</h2>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.610553407524!2d77.55541367472718!3d12.932733715729922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e2615f2180b%3A0x36301a3a3787ae2a!2sKalasindhu%20Academy%20for%20Dance%20and%20Related%20Arts!5e0!3m2!1sen!2sin!4v1690896701490!5m2!1sen!2sin"
-              width="600"
-              height="450"
+              width="465"
+              height="319"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              className="text-center"
+              className="text-center rounded"
             ></iframe>
-
-            {/* <div class="col-lg-4">
-                            <div class="contact-wrapper p-4"
-                                style={{ backgroundColor: " rgba(197, 158, 112, 1)", borderRadius: "18px" }}>
-                                <h2 class="text-center ">Contact Us</h2>
-                                <form action="#" method="post">
-                                    <div class="form-group">
-                                        <label class="mb-1 mt-1" for="name">Name</label>
-                                        <input type="text" class="form-control" id="name" name="name" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="mb-1 mt-1" for="email">Email</label>
-                                        <input type="email" class="form-control" id="email" name="email" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="mb-1 mt-1" for="phone">Phone Number</label>
-                                        <input type="tel" class="form-control" id="phone" name="phone" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="mb-1 mt-1" for="message">Message</label>
-                                        <textarea class="form-control" id="message" name="message" rows="4"
-                                            required></textarea>
-                                    </div>
-                                    <div class="d-flex justify-content-center mt-4">
-
-                                        <button type="submit" class="btn btn-outline-light">Submit</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div> */}
+            <p class="text-center text-white mt-3" style={{width:'465px'}}>Come visit us at this location. We are open on mondays, wednesdays and fridays from 5 pm to 8 pm and on weekends </p>
+          </div>
+        </div>
+        <div className='d-flex justify-content-around align-items-center' style={{width:'1341px', height:'140px', backgroundColor:'#FCB541', borderRadius:'15px', marginLeft:'290px', marginTop:'40px'}}>
+          <div>
+            <b style={{fontSize:'36px'}}>Kalasindhu Community</b>
+            <p style={{fontSize:'20px'}}>Join our Whatsapp community and never miss any update on our workshops or events</p>
+          </div>
+          <div style={{width:'302px', height:'59px', backgroundColor:'#0E0E0E', color:'#FCB541' }} className="d-flex align-items-center ">
+            <a style={{fontSize:'20px', padding:'70px'}}>Join whatsapp group</a>
           </div>
         </div>
       </section>

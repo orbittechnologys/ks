@@ -20,7 +20,7 @@ const AboutSlider = () => {
                 <Splide options={splideOptions} ref={(splide) => (window.splide = splide)}>
                     <SplideSlide>
                         <div className="image-overlay">
-                            <img src={abt} alt="" className="img-fluid mt-0 w-100" />
+                            <img src={abt} alt="" className="img-fluid mt-0 w-100 " />
                             <h1 className="choreographer-text">FOUNDER - DIRECTOR</h1>
                         </div>
                         <div className="container">

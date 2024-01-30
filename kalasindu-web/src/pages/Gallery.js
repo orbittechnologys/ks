@@ -1,146 +1,149 @@
-import React from 'react';
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import { HashLink as Link } from 'react-router-hash-link';
+import React from "react";
+import PhotoAlbum from "../components/PhotoAlbum"
+import PhotoAlbum1 from "../components/PhotoAlbum1";
+import PhotoAlbum2 from "../components/PhotoAlbum2";
+import PhotoAlbum3 from "../components/PhotoAlbum3";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { HashLink as Link } from "react-router-hash-link";
+
 
 function Gallery() {
   return (
     <>
+    <div style={{backgroundColor:'black'}}>
       <Navbar />
-    <div>
-      <div style={{ display: 'flex', justifyContent: 'space-around', height:"100vh", marginTop:"120px" }}>
-        <div>
-          <Link smooth to="#section1"><img src={require("../assets/images/GM1.png")} alt="Image 1" /></Link>
-        </div>
-        <div>
-          <Link smooth to="#section2"><img src={require("../assets/images/GM2.png")} alt="Image 2" /></Link>  
-        </div>
-        <div>
-          <Link smooth to="#section3"><img src={require("../assets/images/GM3.png")} alt="Image 3" /></Link>
-        </div>
-        <div>
-          <Link smooth to="#section4"><img src={require("../assets/images/GM4.png")} alt="Image 4" /></Link>
-        </div>
-      </div>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-<pre></pre>
-      <div id="section1">
-        <h2>Section 1</h2>
-        <p>This is Section 1</p>
-      </div>
+      <div>
+        <div
+          style={{
+            height: "100vh",
+            border: "2px solid black",
+            backgroundColor: "black",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              marginTop: "180px",
+            }}
+          >
+            <div style={{ position: "relative" }}>
+              <Link smooth to="#section1">
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    color: "white",
+                    fontSize: "50px",
+                    textAlign: "center",
+                    cursor: "pointer",
+                  }}
+                >
+                  Rangarpane
+                </div>
+                <img
+                  src={require("../assets/images/GM1.png")}
+                  alt="Image 1"
+                  style={{ width: "100%", transition: "transform 0.2s" }}
+                />
+              </Link>
+            </div>
 
-      <div id="section2">
-        <h2>Section 2</h2>
-        <p>This is Section 2</p>
-      </div>
+            <div style={{ position: "relative" }}>
+              <Link smooth to="#section2">
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    color: "white",
+                    fontSize: "50px",
+                    textAlign: "center",
+                    cursor: "pointer",
+                  }}
+                >
+                  Festivals
+                </div>
+                <img
+                  src={require("../assets/images/GM2.png")}
+                  alt="Image 1"
+                  style={{ width: "100%", transition: "transform 0.2s" }}
+                />
+              </Link>
+            </div>
 
-      <div id="section3">
-        <h2>Section 3</h2>
-        <p>This is Section 3</p>
-      </div>
+            <div style={{ position: "relative" }}>
+              <Link smooth to="#section3">
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    color: "white",
+                    fontSize: "50px",
+                    textAlign: "center",
+                    cursor: "pointer",
+                  }}
+                >
+                  Performance
+                </div>
+                <img
+                  src={require("../assets/images/GM3.png")}
+                  alt="Image 1"
+                  style={{ width: "100%", transition: "transform 0.2s" }}
+                />
+              </Link>
+            </div>
 
-      <div id="section4">
-        <h2>Section 4</h2>
-        <p>This is Section 4</p>
+            <div style={{ position: "relative" }}>
+              <Link smooth to="#section4">
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    color: "white",
+                    fontSize: "50px",
+                    textAlign: "center",
+                    cursor: "pointer",
+                  }}
+                >
+                  Events
+                </div>
+                <img
+                  src={require("../assets/images/GM4.png")}
+                  alt="Image 1"
+                  style={{ width: "100%", transition: "transform 0.2s" }}
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
+        
+        <div id="section1" style={{textAlign:'center', color:'white', backgroundColor:'black', marginTop:'50px'}}>
+          <PhotoAlbum />
+        </div>
+
+        <div id="section2" style={{textAlign:'center', color:'white', backgroundColor:'black', marginTop:'50px'}}>
+        <PhotoAlbum1 />
+        </div>
+
+        <div id="section3" style={{textAlign:'center', color:'white', backgroundColor:'black', marginTop:'50px'}}>
+        <PhotoAlbum2 />
+        </div>
+
+        <div id="section4" style={{textAlign:'center', color:'white', backgroundColor:'black', marginTop:'50px', marginBottom:'80px'}}>
+        <PhotoAlbum3 />
+        </div>
       </div>
-    </div>
+      <Footer />
+      </div>
     </>
   );
 }
