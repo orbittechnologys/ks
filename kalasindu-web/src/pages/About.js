@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
-import AboutHero from '../components/AboutHero'
-import AboutDesc from '../components/AboutDesc'
+// import AboutHero from '../components/AboutHero'
+// import AboutDesc from '../components/AboutDesc'
+import ScrollTextImage from '../components/AboutHero';
 import Footer from '../components/Footer'
 import AboutDescr from '../components/AboutDescr'
 import Navbar from '../components/Navbar'
@@ -15,7 +16,8 @@ function About() {
   return (
     <>
     <Navbar  />
-    <AboutHero />
+    <ScrollTextImage />
+    {/*<AboutHero />*/}
     {/* <AboutDesc /> */}
     <AboutDescr />
     <Footer />
