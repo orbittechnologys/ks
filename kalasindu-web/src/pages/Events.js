@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import CountdownCard from "../components/CountdownCard";
-import "../assets/styles/core.css";
 import EventsG1 from "../assets/images/eventsImage1.png";
 import EventsG2 from "../assets/images/EventsImage2.png";
 import eveImg from "../assets/images/Events1.png";
@@ -16,9 +15,15 @@ import { SlCalender } from "react-icons/sl";
 import { FaRegClock } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaIndianRupeeSign } from "react-icons/fa6";
+import "../assets/styles/core.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 function Events() {
+    useEffect(() => {
+        AOS.init();
+      }, []);
   // Set your countdown values (days, hours, minutes, seconds)
   const countdownValues = {
     days: 28,
@@ -68,12 +73,15 @@ function Events() {
             {/* class left */}
             <div>
               <div>
-                <h1 className="font-weight-bold display-2">Upcoming Events</h1>
+                <h1 className="font-weight-bold display-2" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">Upcoming Events</h1>
                 <div className="d-flex mt-5">
                   <h4 className="display-6">
                     05 <br /> sep
                   </h4>
-                  <h4 className="ms-5 display-6 mt-3">
+                  <h4 className="ms-5 display-6 mt-3"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500">
                     Nirantara Narmada <FaArrowRightLong className="ms-3" />
                   </h4>
                 </div>
@@ -83,6 +91,9 @@ function Events() {
                   </h4>
                   <h4
                     className="ms-5 display-6 mt-3"
+                    data-aos="fade-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
                     onClick={handleButtonClick}
                   >
                     Ganesh uttsav <FaArrowRightLong className="ms-3" />
@@ -169,10 +180,10 @@ function Events() {
         <div style={sectionStyle}>
           <img src={eveImg} alt="Your Image Description" style={imgStyle} />
           <div style={contentStyle}>
-            <h1 className="display-1 mb-5" style={{ fontWeight: "700" }}>
+            <h1 className="display-1 mb-5" data-aos="fade-up" data-aos-duration="2800" style={{ fontWeight: "700" }}>
               Festivals of Kalasindhu
             </h1>
-            <p>
+            <p data-aos="fade-up" data-aos-duration="3000">
               Lorem ipsum dolor sit amet consectetur. Odio elementum dignissim
               purus maecenas bibendum urna viverra odio. Amet id felis
               condimentum eget fringilla tempor et nunc ipsum..
@@ -197,6 +208,9 @@ function Events() {
         >
           <h1
             style={{ fontSize: "80px", marginRight: "70px", marginTop: "20px" }}
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
           >
             Navarasa Navaratri
           </h1>
@@ -250,7 +264,7 @@ function Events() {
             style={{ width: "512px", height: "408px", fontFamily: "serif" }}
           >
             <div style={{ marginBottom: "50px" }}>
-              <h3>Why we celebrate ?</h3>
+              <h3 data-aos="fade-up" data-aos-duration="3000">Why we celebrate ?</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Neque dictum risus
                 commodo vehicula. Mattis suspendisse sed etiam in aliquam sit.
@@ -258,7 +272,7 @@ function Events() {
               </p>
             </div>
             <div style={{ marginBottom: "50px" }}>
-              <h3>How we celebrate ?</h3>
+              <h3 data-aos="fade-up" data-aos-duration="3000">How we celebrate ?</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Neque dictum risus
                 commodo vehicula. Mattis suspendisse sed etiam in aliquam sit.
@@ -266,7 +280,7 @@ function Events() {
               </p>
             </div>
             <div style={{ marginBottom: "50px" }}>
-              <h3>When we celebrate ?</h3>
+              <h3 data-aos="fade-up" data-aos-duration="3000">When we celebrate ?</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Neque dictum risus
                 commodo vehicula. Mattis suspendisse sed etiam in aliquam sit.
@@ -296,10 +310,16 @@ function Events() {
           </div>
 
           <div style={{ width: "799px", height: "152px", marginTop:'30px' }}>
-            <h1 style={{ fontSize: "80px", color: "#94B074" }}>
+            <h1 style={{ fontSize: "80px", color: "#94B074" }}
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
               Navarasa Navaratri
             </h1>
-            <p style={{ fontSize: "22px", color: "wheat", marginTop: "80px" }}>
+            <p style={{ fontSize: "22px", color: "wheat", marginTop: "80px" }}
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="2500">
               In memory of her beloved guru Narmada ,{" "}
               <span style={{ color: "#FFBC11" }}> Nirantara narmada</span> came
               into existence Lorem ipsum dolor sit amet consectetur. Neque
@@ -364,33 +384,28 @@ function Events() {
             <div className="container">
               <div className="row">
                 <div className="col-lg-6">
-                  <h1 className="text-white display-5 fw-bolder mt-5">
+                  <h1 className="text-white fw-bolder mt-5" style={{fontSize:'64px', fontWeight:'600'}} 
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500">
                     Workshops and other events
                   </h1>
-                  <p className="text-white fs-4 mt-4">
+                  <p className="text-white fs-5 mt-4"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500">
                     In memory of her beloved guru Narmada ,
-                    <span>Nirantara narmada</span> came into existence Lorem
+                    <span style={{color:'#FFBC11'}}>Nirantara narmada</span> came into existence Lorem
                     ipsum dolor sit amet consectetur. Neque dictum risus commodo
                     vehicula. Mattis suspendisse sed etiam in aliquam sit.
                     Integer pharetra tristique cursus eu mauris et in purus ut.
                   </p>
-                  <a
-                    className="btn btn-md rounded"
-                    style={{
-                      width: "248px",
-                      height: "60px",
-                      background: "#FCB541",
-                      alignItems: "center",
-                      fontSize: "20px",
-                      marginTop: "20px",
-                      fontWeight: "700",
-                    }}
-                  >
-                    Connect with us
-                  </a>
+                <a className="btn btn-lg  rounded "style={{width:'254px', background:'#FCB541', marginTop:'50px'}}>
+                    Enquire Now
+                </a>
                 </div>
                 <div className="col-lg-6 d-flex justify-content-center align-items-center">
-                  <img src={eveImg4} height={500} alt="Hero Image" />
+                  <img src={eveImg4} height={500} alt="Hero Image" width={527} />
                 </div>
               </div>
             </div>

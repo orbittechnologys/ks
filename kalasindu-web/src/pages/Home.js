@@ -7,7 +7,6 @@ import Footer from "../components/Footer";
 import Team from "../components/Team";
 import Testimonial from "../components/Testimonial";
 import bgImg from "../assets/images/why.png";
-import AOS from "aos";
 import Hcard1 from "../assets/images/Hcard1.png.png";
 import Hcard2 from "../assets/images/Hcard2.png";
 import { SlCalender } from "react-icons/sl";
@@ -18,6 +17,7 @@ import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa6";
 import "aos/dist/aos.css";
+import AOS from "aos";
 
 function Home() {
   useEffect(() => {
