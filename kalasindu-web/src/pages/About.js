@@ -17,9 +17,9 @@ function About() {
     <>
     <Navbar  />
     <ScrollTextImage />
+    <AboutDescr />
     {/*<AboutHero />*/}
     {/* <AboutDesc /> */}
-    <AboutDescr />
     <Footer />
     </>
     )

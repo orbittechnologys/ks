@@ -29,9 +29,9 @@ function Footer() {
                     <div className="">
                         <h6 className="footer-heading text-uppercase  mt-3 text-white">QUICK LINKS</h6>
                         <ul className="list-unstyled footer-link mt-4">
-                            <li><a href="/">Events</a></li>
-                            <li><a href="#">Gallery </a></li>
-                            <li><a href="#">Collaborate</a></li>
+                            <li><a href="/events">Events</a></li>
+                            <li><a href="/gallery">Gallery </a></li>
+                            <li><a href="/collaborate">Collaborate</a></li>
                         </ul>
                     </div>
                 </div>
@@ -40,10 +40,10 @@ function Footer() {
                     <div className="">
                         <h6 className="footer-heading text-uppercase  mt-3 text-white">Connect with us</h6>
                         <ul className="list-unstyled footer-link mt-4">
-                            <li><a href="tel:+91 123456789"> <i className="bi bi-telephone me-2"></i> 123456789 </a></li>
-                            <li><a href="mailto:info@ieto.com"><i className="bi bi-envelope me-2"></i> info@demo.com </a>
+                            <li><a href="tel:+91 123456789"> <i className="bi bi-telephone me-2"></i> 9900579347 </a></li>
+                            <li><a href="mailto:info@ieto.com"><i className="bi bi-envelope me-2"></i> Kalasindhu@gmail.com </a>
                             </li>
-                            <li><a href=" "> <i className="bi bi-instagram me-2"></i>@demodance </a></li>
+                            <li><a href=" "> <i className="bi bi-instagram me-2"></i>@dKalasindhu</a></li>
                         </ul>
                     </div>
                 </div>

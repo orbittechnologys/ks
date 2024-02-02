@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import '../assets/styles/core.css'
-import supImg from '../assets/images/support.png'
+import supImg from '../assets/images/Manthana.png'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import AOS from 'aos';
@@ -13,16 +13,25 @@ function Support() {
     <>
       <Navbar />
 
-      <section className='hero-wrapper position-relative'>
-        <img src={supImg} className='img-fluid w-100' alt='Hero Image' />
+      <section className='hero-wrapper position-relative' style={{height:'960px'}}>
+        <img src={supImg} className='img-fluid w-100' alt='Hero Image'  />
         <div className='hero-overlay text-center d-flex flex-column justify-content-center align-items-center text-white'>
-          <h3>Support Us</h3>
-          <a className="btn btn-warning rounded-pill">Learn how to support us</a>
+          <h3 style={{fontSize:'48px'}}data-aos="fade-down" data-aos-duration="2800">Support Us</h3>
+          <a
+                className="btn btn-lg  rounded  mt-4"
+                style={{
+                  width: "286px",
+                  background: "#FCB541",
+                  color: "black",
+                }}
+              >
+              Learn how to support us
+              </a>
         </div>
       </section>
 
 
-      <section className='p-4'>
+      <section className='p-4 mt-5'>
         <div className="container p-4 mt-5 shadow-sm mb-5">
           <div className="text-center mt-3" data-aos="fade-up" data-aos-duration="1000">
             <h3 className="fw-bolder">By sponsoring us</h3>

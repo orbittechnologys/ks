@@ -106,6 +106,7 @@ function Home() {
           <div
             className=""
             style={{ width: "32em", height: "28em", position: "relative" }}
+            data-aos="fade-right" data-aos-duration="2800"
           >
             <div>
               <img
@@ -154,6 +155,7 @@ function Home() {
           <div
             className=""
             style={{ width: "32em", height: "28em", position: "relative" }}
+            data-aos="fade-left" data-aos-duration="2800"
           >
             <div>
               <img

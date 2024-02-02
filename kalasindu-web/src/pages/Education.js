@@ -8,9 +8,9 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 
 function Education() {
-    useEffect(() => {
-        AOS.init();
-      }, []);
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div style={{ backgroundColor: "#E8E5E7" }}>
       <Navbar />
@@ -19,12 +19,21 @@ function Education() {
           <div className="mt-5 d-flex justify-content-between">
             <div className="col-lg-6 mt-5">
               <h1
-                className="fw-bolder mt-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+                className="fw-bolder mt-4"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
                 style={{ fontSize: "64px", color: "black" }}
               >
                 Education at Kalasindhu
               </h1>
-              <p className="text-dark mt-5" style={{ fontSize: "20px" }} data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+              <p
+                className="text-dark mt-5"
+                style={{ fontSize: "20px" }}
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
                 At Kalasindhu, a comprehensive and integrated approach to
                 education is offered. Music and sankrit is taught along with
                 dance, so students understand the lyrics and meaning of the
@@ -45,7 +54,14 @@ function Education() {
               </a>
             </div>
             <div className="mt-5">
-              <img src={eduImg1} height={528} alt="Hero Image" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500"/>
+              <img
+                src={eduImg1}
+                height={528}
+                alt="Hero Image"
+                data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              />
             </div>
           </div>
         </div>
@@ -55,19 +71,32 @@ function Education() {
         <div className="container">
           <div className="row mt-5 mb-4 p-5">
             <div className="col-lg-6 d-flex justify-content-between align-items-center">
-              <img src={eduImg2} height={550} alt="Hero Image" />
+              <img
+                src={eduImg2}
+                height={550}
+                alt="Hero Image"
+                data-aos="fade-right"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              />
             </div>
             <div className="col-lg-6">
               <h1
                 className="text-white fw-bolder "
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
                 style={{ fontSize: "64px" }}
               >
                 Curriculum
               </h1>
 
               <ol
-                className="fw-bold text-white"
-                style={{ fontSize: "20px", marginTop: "20px" }}
+                className="text-white"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                style={{ fontSize: "20px", marginTop: "20px", lineHeight: "2" }}
               >
                 <li>
                   The curriculum includes meticulous instruction in hand
@@ -103,12 +132,28 @@ function Education() {
         </div>
       </section>
 
-      <section style={{height:'652px'}}>
+      <section style={{ height: "652px" }}>
         <div className="container">
           <div className="row mt-5 mb-4">
             <div className="col-lg-6">
-              <h1 className="fw-bolder mt-5" style={{fontSize:'64px', color:'black'}}>Added benefits</h1>
-              <ol className="mt-4" style={{fontSize:'20px', fontWeight:'600', lineHeight:'1.5'}}>
+              <h1
+                className="fw-bolder mt-5"
+                style={{ fontSize: "64px", color: "black" }}
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
+                Added benefits
+              </h1>
+              <ol
+                className="mt-4"
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "600",
+                  lineHeight: "1.5",
+                }}
+                data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500"
+              >
                 <li>
                   The curriculum includes meticulous instruction in hand
                   gestures, facial expressions, adavus, and a traditional
@@ -129,38 +174,65 @@ function Education() {
                 </li>
               </ol>
 
-              <a className="btn btn-lg btn-dark rounded  fw-bolder mt-4" style={{width:'198px', color:'#FCB541'}}>
+              <a
+                className="btn btn-lg btn-dark rounded  fw-bolder mt-4"
+                style={{ width: "198px", color: "#FCB541" }}
+              >
                 Enquire
               </a>
             </div>
             <div className="col-lg-6 d-flex justify-content-center align-items-center">
-              <img src={eduImg3} height={550} alt="Hero Image" />
+              <img src={eduImg3} height={550} alt="Hero Image" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500"/>
             </div>
           </div>
         </div>
       </section>
 
-      <section style={{ backgroundColor: "#003D1B", height:'652px' }}>
+      <section style={{ backgroundColor: "#003D1B", height: "652px" }}>
         <div className="container">
           <div className="row mt-5 p-5">
             <div className="col-lg-12">
-              <h1 className="fw-bolder" style={{color:'#E8E5E7', fontSize:'64px', fontWeight:'600'}}>
+              <h1
+                className="fw-bolder"
+                style={{
+                  color: "#E8E5E7",
+                  fontSize: "64px",
+                  fontWeight: "600",
+                }}
+                data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
+              >
                 Admissions and schedule
               </h1>
 
-              <p className="text-white mt-5"style={{fontSize:'25px', fontWeight:'600'}}>
+              <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000"
+                className="text-white mt-5"
+                style={{ fontSize: "25px", fontWeight: "600" }}
+              >
                 For beginners aged 7 and above, Kalasindhu provides a welcoming
                 entry point. Enrollment is available in May, June, and October.
               </p>
-              <p className=" text-white mt-3"style={{fontSize:'25px', fontWeight:'600'}}>
+              <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2500"
+                className=" text-white mt-3"
+                style={{ fontSize: "25px", fontWeight: "600" }}
+              >
                 Classes are held on Mondays, Wednesdays,  from 5:00 to 8 pm
                 COVERING 4 batches each focusing on different levels of
                 learning.
               </p>
-              <p className=" text-white mt-3"style={{fontSize:'25px', fontWeight:'600'}}>
+              <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000"
+                className=" text-white mt-3"
+                style={{ fontSize: "25px", fontWeight: "600" }}
+              >
                 New beginners batches will be conducted on the weekends.
               </p>
-              <a className="btn btn-lg  rounded "style={{width:'254px', background:'#FCB541', marginTop:'50px'}}>
+              <a
+                className="btn btn-lg  rounded "
+                style={{
+                  width: "254px",
+                  background: "#FCB541",
+                  marginTop: "50px",
+                }}
+              >
                 Enquire Now
               </a>
             </div>
