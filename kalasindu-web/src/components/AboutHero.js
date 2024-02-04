@@ -70,13 +70,13 @@ const ScrollTextImage = () => {
         }}
       >
         <h1
-          style={{ margin: 0, fontSize: "48px" }}
+          style={{ margin: 0, fontSize: "48px", fontFamily:'Open Sans' }}
           data-aos="fade-left"
           data-aos-duration="1700"
         >
           Poornima Gururaja
         </h1>
-        <p data-aos="fade-right"
+        <p data-aos="fade-right" style={{fontFamily:'Open Sans'}}
         data-aos-duration="1700">
           Poornima Gururaja is an exponent of the Pandanallur/Tanjore School of
           dance, a disciple of Guru Smt. Narmada who trained under the legendary

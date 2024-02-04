@@ -32,8 +32,8 @@ const photos3=[
 const PhotoAlbum3 = () => {
   return (
     <Container>
-        <h2>Events</h2>
-          <p>Kalasindhu hosts engaging webinars, seminars, and workshops, showcasing renowned artists and scholars, fostering cultural appreciation and unity. Take a look at some of these educating events  conducted at Kalasindhu ever since it's establishment in 2009.</p>
+        <h2 style={{fontFamily:'Oswald', marginBottom:'40px'}}>Events</h2>
+          <p style={{fontFamily:'Open Sans', marginBottom:'40px'}}>Kalasindhu hosts engaging webinars, seminars, and workshops, showcasing renowned artists and scholars, fostering cultural appreciation and unity. Take a look at some of these educating events  conducted at Kalasindhu ever since it's establishment in 2009.</p>
       <Row>
       {photos3.map((photo, index) => (
           <Col key={index} md={4} className="mb-4">

@@ -32,8 +32,8 @@ const photos2=[
 const PhotoAlbum2 = () => {
   return (
     <Container>
-        <h2>Performances</h2>
-          <p>Take a peak into an array of performances our Kalasindhu Ensemble has given so far. 
+        <h2 style={{fontFamily:'Oswald', marginBottom:'40px'}}>Performances</h2>
+          <p style={{fontFamily:'Open Sans', marginBottom:'40px'}}>Take a peak into an array of performances our Kalasindhu Ensemble has given so far. 
 Kalasindhu Ensemble has been extremely blessed to have had oppertunities to present Margams , thematic productions, Dance dramas such as 'Shiva-Shive' , 'Guhyam' 'Shivotsavam' and many more at prestigious and nation renowned and recognised platforms..</p>
       <Row>
         {photos2.map((photo, index) => (

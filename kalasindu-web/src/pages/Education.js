@@ -23,13 +23,13 @@ function Education() {
                 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1500"
-                style={{ fontSize: "64px", color: "black" }}
+                style={{ fontSize: "64px", color: "black" ,fontFamily:'Oswald'}}
               >
                 Education at Kalasindhu
               </h1>
               <p
                 className="text-dark mt-5"
-                style={{ fontSize: "20px" }}
+                style={{ fontSize: "20px" ,fontFamily:'Open Sans'}}
                 data-aos="fade-up"
                 data-aos-easing="linear"
                 data-aos-duration="1500"
@@ -86,7 +86,7 @@ function Education() {
                 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1500"
-                style={{ fontSize: "64px" }}
+                style={{ fontSize: "64px" ,fontFamily:'Oswald'}}
               >
                 Curriculum
               </h1>
@@ -96,7 +96,7 @@ function Education() {
                 data-aos="fade-up"
                 data-aos-easing="linear"
                 data-aos-duration="1500"
-                style={{ fontSize: "20px", marginTop: "20px", lineHeight: "2" }}
+                style={{ fontSize: "20px", marginTop: "20px",fontFamily:'Open Sans' }}
               >
                 <li>
                   The curriculum includes meticulous instruction in hand
@@ -138,7 +138,7 @@ function Education() {
             <div className="col-lg-6">
               <h1
                 className="fw-bolder mt-5"
-                style={{ fontSize: "64px", color: "black" }}
+                style={{ fontSize: "64px", color: "black",fontFamily:'Oswald' }}
                 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1500"
@@ -150,7 +150,7 @@ function Education() {
                 style={{
                   fontSize: "20px",
                   fontWeight: "600",
-                  lineHeight: "1.5",
+                  fontFamily:'Open Sans'
                 }}
                 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500"
               >
@@ -198,6 +198,7 @@ function Education() {
                   color: "#E8E5E7",
                   fontSize: "64px",
                   fontWeight: "600",
+                  fontFamily:'Oswald'
                 }}
                 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"
               >
@@ -206,14 +207,14 @@ function Education() {
 
               <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000"
                 className="text-white mt-5"
-                style={{ fontSize: "25px", fontWeight: "600" }}
+                style={{ fontSize: "25px", fontWeight: "500",fontFamily:'Open Sans' }}
               >
                 For beginners aged 7 and above, Kalasindhu provides a welcoming
                 entry point. Enrollment is available in May, June, and October.
               </p>
               <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2500"
                 className=" text-white mt-3"
-                style={{ fontSize: "25px", fontWeight: "600" }}
+                style={{ fontSize: "25px", fontWeight: "500",fontFamily:'Open Sans' }}
               >
                 Classes are held on Mondays, Wednesdays,  from 5:00 to 8 pm
                 COVERING 4 batches each focusing on different levels of
@@ -221,7 +222,7 @@ function Education() {
               </p>
               <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000"
                 className=" text-white mt-3"
-                style={{ fontSize: "25px", fontWeight: "600" }}
+                style={{ fontSize: "25px", fontWeight: "500",fontFamily:'Open Sans' }}
               >
                 New beginners batches will be conducted on the weekends.
               </p>
@@ -231,6 +232,7 @@ function Education() {
                   width: "254px",
                   background: "#FCB541",
                   marginTop: "50px",
+                  fontWeight:'800'
                 }}
               >
                 Enquire Now

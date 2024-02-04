@@ -16,7 +16,7 @@ function AboutDescr() {
         <div className="abt-overlay">
           <h1
             className="text-center font-weight-bold "
-            style={{ marginTop: "80px", fontSize: "48px" }}
+            style={{ marginTop: "80px", fontSize: "48px",fontFamily:'Oswald' }}
             data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="2500"
@@ -24,7 +24,7 @@ function AboutDescr() {
             About Kalasindhu
           </h1>
           <p
-            style={{ fontSize: "20px", padding: "55px", lineHeight: "2" }}
+            style={{ fontSize: "18px", padding: "55px", lineHeight: "2" ,fontFamily:'Open Sans'}}
             className="text-center text-white"
             data-aos="fade-up"
             data-aos-easing="linear"
@@ -34,18 +34,17 @@ function AboutDescr() {
             passionately committed to the preservation and promotion of Indian
             arts and culture. Nestled in the vibrant city of Banashankari,
             Bangalore, India, this renowned institution serves as a beacon for
-            artistic excellence. At Kalasindhu, a comprehensive and integrated
+            artistic excellence. <br/>
+            At Kalasindhu, a comprehensive and integrated
             approach to education is offered, encompassing the rich tapestry of
             classical arts, including dance, music, visual art, and Sanskrit.
             However, it is dance that takes center stage, receiving the utmost
-            attention and focus. Within the premises of Kalasindhu, a sprawling
+            attention and focus. <br/>
+            Within the premises of Kalasindhu, a sprawling
             expanse has been dedicated to cultivating an environment that
             nurtures creativity, catering to individuals of all ages, be it
             children or adults. The space is thoughtfully designed, encompassing
-            a serene ambiance that stimulates the artistic spirit. Through its
-            unwavering dedication, Kalasindhu continues to inspire generations,
-            fostering a deep appreciation for Indian arts and culture while
-            instilling a lifelong love for dance and its many facets.
+            a serene ambiance that stimulates the artistic spirit.
           </p>
         </div>
       </section>
@@ -110,12 +109,12 @@ function AboutDescr() {
             class="fw-bolder"
             data-aos="fade-down"
             data-aos-duration="2700"
-            style={{ fontSize: "48px" }}
+            style={{ fontSize: "48px",fontFamily:'Oswald' }}
           >
             Awards
           </h2>
           <p
-            style={{ fontWeight: 200, alignItems:'center',padding:'40px', fontSize:'20px' }}
+            style={{ fontWeight: 200, alignItems:'center',padding:'40px', fontSize:'16px',fontFamily:'Open Sans' }}
             data-aos="fade-left"
             data-aos-duration="1700"
           >

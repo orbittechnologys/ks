@@ -75,7 +75,7 @@ function Home() {
             <FaYoutube />
           </div>
           <div className="d-flex flex-column justify-content-end">
-            <div>
+            <div style={{fontFamily:'Oswald'}}>
               <h2
                 className="display-5 p-5 text-white text-center fw-bolder"
                 data-aos="fade-up"
@@ -92,7 +92,7 @@ function Home() {
 
       <section style={{ height: "45em", backgroundColor: "#E8E5E7" }}>
         <div className="d-flex justify-content-center align-items-center p-5 ">
-          <h1 className="fw-bolder display-4">What's New?</h1>
+          <h1 className="fw-bolder display-4" style={{fontFamily:'Oswald'}}>What's New?</h1>
         </div>
 
         {/* change based on client */}
@@ -105,7 +105,7 @@ function Home() {
         <div className="d-flex justify-content-around align-item-center">
           <div
             className=""
-            style={{ width: "32em", height: "28em", position: "relative" }}
+            style={{ width: "32em", height: "28em", position: "relative", fontFamily:'Open Sans' }}
             data-aos="fade-right" data-aos-duration="2800"
           >
             <div>
@@ -154,7 +154,7 @@ function Home() {
           </div>
           <div
             className=""
-            style={{ width: "32em", height: "28em", position: "relative" }}
+            style={{ width: "32em", height: "28em", position: "relative", fontFamily:'Open Sans' }}
             data-aos="fade-left" data-aos-duration="2800"
           >
             <div>
@@ -223,6 +223,7 @@ function Home() {
                   className="display-6 text-white "
                   data-aos="fade-up"
                   data-aos-duration="1500"
+                  style={{fontFamily:'Oswald'}}
                 >
                   Why choose Kalasindhu Academy?
                 </p>
@@ -240,7 +241,7 @@ function Home() {
             <div className="col-lg-6  mt-3">
               <div
                 className="accordion"
-                style={{ border: "none" }}
+                style={{ border: "none",fontFamily:'Open Sans' }}
                 id="accordionExample"
               >
                 <div
@@ -274,7 +275,7 @@ function Home() {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                      <p>
+                      <p style={{fontFamily:'Open Sans'}}>
                         From a young age,students nare taught to embrace the
                         fusion of practical knowledge and theory in dance.they
                         are immersed in studying dance texts, crafting their own
@@ -452,7 +453,7 @@ function Home() {
         <div className="container p-3 align-middle">
           <h2
             className="text-center mt-4"
-            style={{ color: "rgba(197, 158, 112, 1)" }}
+            style={{ color: "rgba(197, 158, 112, 1)" , fontSize:'48px',fontFamily:'Oswald'}}
           >
             Glimpse of Kalasindhu
           </h2>
@@ -479,7 +480,7 @@ function Home() {
       <section
         style={{ backgroundColor: "#330A0A", paddingTop: "8em", height:'931px' }}
         >
-        <h1 style={{color:'#C59E70', textAlign:'center'}}>Pick one way, to get in touch..</h1>
+        <h1 style={{color:'#C59E70', textAlign:'center',fontFamily:'Oswald', fontSize:'48px '}}>Pick one way, to get in touch..</h1>
         <div class="container p-5 map d-flex justify-content-between">
           <div >
           <div className="">
@@ -500,7 +501,7 @@ function Home() {
               referrerpolicy="no-referrer-when-downgrade"
               className="text-center rounded"
             ></iframe>
-            <p class="text-center text-white mt-3" style={{width:'465px'}}>Come visit us at this location. We are open on mondays, wednesdays and fridays from 5 pm to 8 pm and on weekends </p>
+            <p class="text-left text-white mt-3" style={{width:'465px'}}>Come visit us at this location. We are open on mondays, wednesdays and fridays from 5 pm to 8 pm and on weekends </p>
           </div>
         </div>
         <div className='d-flex justify-content-around align-items-center' style={{width:'1341px', height:'140px', backgroundColor:'#FCB541', borderRadius:'15px', marginLeft:'290px', marginTop:'40px'}}>
@@ -508,8 +509,8 @@ function Home() {
             <b style={{fontSize:'36px'}}>Kalasindhu Community</b>
             <p style={{fontSize:'20px'}}>Join our Whatsapp community and never miss any update on our workshops or events</p>
           </div>
-          <div style={{width:'302px', height:'59px', backgroundColor:'#0E0E0E', color:'#FCB541' }} className="d-flex align-items-center ">
-            <a style={{fontSize:'20px', padding:'70px'}}>Join whatsapp group</a>
+          <div style={{width:'312px', height:'59px', backgroundColor:'#0E0E0E', color:'#FCB541',borderRadius:'15px' }} className="d-flex align-items-center ">
+            <a style={{fontSize:'18px', padding:'70px',fontWeight:'500'}}>Join whatsapp group</a>
           </div>
         </div>
       </section>

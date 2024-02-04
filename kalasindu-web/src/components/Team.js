@@ -19,9 +19,9 @@ const Team = () => {
       <div className="container p-5">
         <h2
           className="text-center mt-4 mb-4"
-          style={{ color: "rgba(197, 158, 112, 1)" }}
+          style={{ color: "rgba(197, 158, 112, 1)", fontFamily:'Oswald', fontSize:'48px' }}
         >
-          Meet our Team
+        Glimse of Kalasindhu
         </h2>
         <Splide
           options={{
@@ -44,7 +44,7 @@ const Team = () => {
             />
             <figcaption
               className="figcaption text-white fw-bolder text-bold pb-3 ml-3"
-              style={{ fontSize: "26px", background: "none" }}
+              style={{ fontSize: "26px", background: "none", marginLeft:'20px' }}
             >
               Nagalakshmi
               <p className="mb-0" style={{ fontSize: "16px" }}>
@@ -86,7 +86,7 @@ const Team = () => {
             />
             <figcaption
               className="figcaption text-white fw-bolder text-bold pb-3 ml-3"
-              style={{ fontSize: "26px", background: "none" }}
+              style={{ fontSize: "26px", background: "none", marginLeft:'20px' }}
             >
               Uday kumar
               <p className="mb-0" style={{ fontSize: "16px" }}>
@@ -128,7 +128,7 @@ const Team = () => {
             />
             <figcaption
               className="figcaption text-white fw-bolder text-bold pb-3 ml-3"
-              style={{ fontSize: "26px", background: "none" }}
+              style={{ fontSize: "26px", background: "none",marginLeft:'20px' }}
             >
               Deepthi S
               <p className="mb-0" style={{ fontSize: "16px" }}>
@@ -170,7 +170,7 @@ const Team = () => {
             />
             <figcaption
               className="figcaption text-white fw-bolder text-bold pb-3 ml-3"
-              style={{ fontSize: "26px", background: "none" }}
+              style={{ fontSize: "26px", background: "none",marginLeft:'20px' }}
             >
               Lavanthi S
               <p className="mb-0" style={{ fontSize: "16px" }}>
@@ -212,7 +212,7 @@ const Team = () => {
             />
             <figcaption
               className="figcaption text-white fw-bolder text-bold pb-3 ml-3"
-              style={{ fontSize: "26px", background: "none" }}
+              style={{ fontSize: "26px", background: "none",marginLeft:'20px' }}
             >
               Anagha kumar
               <p className="mb-0" style={{ fontSize: "16px" }}>
@@ -254,7 +254,7 @@ const Team = () => {
             />
             <figcaption
               className="figcaption text-white fw-bolder text-bold pb-3 ml-3"
-              style={{ fontSize: "26px", background: "none" }}
+              style={{ fontSize: "26px", background: "none",marginLeft:'20px' }}
             >
               Samvitha
               <p className="mb-0" style={{ fontSize: "16px" }}>
@@ -296,7 +296,7 @@ const Team = () => {
             />
             <figcaption
               className="figcaption text-white fw-bolder text-bold pb-3 ml-3"
-              style={{ fontSize: "26px", background: "none" }}
+              style={{ fontSize: "26px", background: "none",marginLeft:'20px' }}
             >
               Gowri
               <p className="mb-0" style={{ fontSize: "16px" }}>

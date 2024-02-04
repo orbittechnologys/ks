@@ -26,8 +26,8 @@ const Testimonial = () => {
               >
                 TESTIMONIALS
               </p>
-              <p className="fs-1 text-white fw-bolder">
-                What people have to say about Kalasindhu
+              <p className="text-white fw-bolder" style={{fontFamily:'Oswald', fontSize:'48px'}}>
+                What people have to say about Kalasindhu 
               </p>
             </div>
             <img src={testi} className="img-fluid w-100" />
@@ -43,11 +43,11 @@ const Testimonial = () => {
             ref={splideRef}
           >
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 ">
+              <div className="text-white test-card p-3 m-5 " style={{fontFamily:'Open Sans',background:'#1a5032', height:'508px'}}>
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
-                <h1 className="mt-0 mb-2">Life skills</h1>
+                <h1 className="mt-0 mb-5">Life skills</h1>
                 <p>
                   {" "}
                   Aside from teaching dance, I like Mam's emphasis on disciple
@@ -55,85 +55,89 @@ const Testimonial = () => {
                   learn. Every year, we look forward to Navarasa Navaratri and
                   Niranthara Narmada in Kalasindhu. The annual day, which began
                   this year, adds to the appeal of seeing all of the children
-                  perform on one stage. -Veena ( Parent)
-                </p>
+                  perform on one stage.<br/>
+                  </p>
+                  <p className="mt-4">-Veena ( Parent)</p> 
               </div>
             </SplideSlide>
 
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 ">
+              <div className="text-white test-card p-3 m-5 " style={{fontFamily:'Open Sans',background:'#1a5032', height:'508px'}}>
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
-                <h1 className="mt-0 mb-2">Truly meticulous</h1>
+                <h1 className="mt-0 mb-5">Truly meticulous</h1>
                 <p>
                   {" "}
                   I CONGRATULATE Poornima and her team of friends and colleagues
                   for this Venture , the organisation has been truly meticulous.
                   Every detail being attended to with such devotion, care and
-                  efficiency. -Alarmel Valli (Artist)
-                </p>
-              </div>
+                  efficiency. 
+                  </p>
+                  <p className="mt-4">-Alarmel Valli (Artist)</p>
+                  </div>
             </SplideSlide>
 
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 ">
+              <div className="text-white test-card p-3 m-5 " style={{fontFamily:'Open Sans',background:'#1a5032',height:'508px'}}>
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
-                <h1 className="mt-0 mb-2"> Well crafted</h1>
+                <h1 className="mt-0 mb-5"> Well crafted</h1>
                 <p>
                   {" "}
                   Poornima’s students showcased the style with well practiced
                   technique in the production 'Shivotsavam'. The narratives was
                   well crafted with simple aesthetic appeal. All the dancers
                   enacted their roles with wonderful grace executing right
-                  proportions of nritta and abhinaya. -Veena Murthy Vijay
-                  (Artist)
-                </p>
+                  proportions of nritta and abhinaya. 
+                  </p>
+                  <p className="mt-4">-Veena Murthy Vijay (Artist)</p> 
               </div>
             </SplideSlide>
 
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 ">
+              <div className="text-white test-card p-3 m-5 " style={{fontFamily:'Open Sans',background:'#1a5032',height:'508px'}}>
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
-                <h1 className="mt-0 mb-2">Symmetry of dancers</h1>
+                <h1 className="mt-0 mb-4">Symmetry of dancers</h1>
                 <p>
                   {" "}
                   Fresh ideas aplenty in building up the theme, easily
                   comprehensible, coherent verbalization, clear visualization of
                   the concept and neat symmetry of dancers was Guhyam in
                   totality. Poornima Gururaja's ideas connected well with the
-                  audience. -Jyothi Raghuram (Artist)
+                  audience. 
+                  <p className='mt-4'>- Jyothi Raghuram (Artist)</p>
                 </p>
               </div>
             </SplideSlide>
 
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 ">
+              <div className="text-white test-card p-3 m-5 " style={{fontFamily:'Open Sans',background:'#1a5032',height:'508px'}}>
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
-                <h1 className="mt-0 mb-2">Most happiest </h1>
+                <h1 className="mt-0 mb-4">Most happiest </h1>
                 <p>
                   {" "}
                   I am the most happiest to have watched Poornima Gururaja's
                   choreographies on such lesser known poets of our Karnataka. It
                   is an honour to have experienced her art and Direction to her
-                  student' s Dance . -RK padmanabha (reknowned musician and
-                  Guru)
+                  student' s Dance . 
                 </p>
+                <p className='mt-4'>-RK padmanabha (reknowned musician and
+                  Guru)</p>
               </div>
             </SplideSlide>
 
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 ">
+              <div className="text-white test-card p-3 m-5 " style={{fontFamily:'Open Sans',background:'#1a5032',height:'508px'}}>
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
-                <h1 className="mt-0 mb-2">Safe space </h1>
+                <h1 className="mt-0 mb-4">Safe space </h1>
                 <p>
                   {" "}
                   Everything is made very clear when it is being taught and we
@@ -141,17 +145,18 @@ const Testimonial = () => {
                   makes us better dancers. I find Kalasindhu to be a safe space
                   for me,and I'm grateful for the comfort and security this
                   environment provides and that is one of the best experiences
-                  I've had here! :) -Stuthi vitta (Student)
+                  I've had here! :) 
                 </p>
+                <p className='mt-4'>-Stuthi vitta (Student)</p>
               </div>
             </SplideSlide>
 
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 ">
+              <div className="text-white test-card p-3 m-5 "style={{fontFamily:'Open Sans',background:'#1a5032',height:'508px'}}>
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
-                <h1 className="mt-0 mb-2">Growth </h1>
+                <h1 className="mt-0 mb-4">Growth </h1>
                 <p>
                   {" "}
                   I'm extremely fortunate and blessed to have a Guru like
@@ -159,34 +164,36 @@ const Testimonial = () => {
                   dance but even beyond. The workshops organized at class & the
                   opportunities that we receive for performing at various places
                   and competitions is a great exposure for every dancer's
-                  growth. -Anagha (Student)
+                  growth. 
                 </p>
+                <p className='mt-4'>-Anagha (Student)</p>
               </div>
             </SplideSlide>
 
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 ">
+              <div className="text-white test-card p-3 m-5 "style={{fontFamily:'Open Sans',background:'#1a5032',height:'508px'}}>
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
-                <h1 className="mt-0 mb-2">Holistic Education </h1>
+                <h1 className="mt-0 mb-4">Holistic Education </h1>
                 <p>
                   {" "}
                   Every class is productive and I come back home every single
                   time with something to ponder about with respect to my
                   dancing. The music and Sanskrit classes conducted once a week
                   also help in increasing our connect with the dance form.
-                  -Aarabhi (Student)
+                  
                 </p>
+                <p className='mt-4'>-Aarabhi (Student)</p>
               </div>
             </SplideSlide>
 
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 ">
+              <div className="text-white test-card p-3 m-5 "style={{fontFamily:'Open Sans',background:'#1a5032',height:'508px'}}>
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
-                <h1 className="mt-0 mb-2">Encouraging </h1>
+                <h1 className="mt-0 mb-4">Encouraging </h1>
                 <p>
                   {" "}
                   Kalasindhu has been like a second home to me. Maam has always
@@ -194,8 +201,9 @@ const Testimonial = () => {
                   the opportunity to learn from Chandrashekar sir, which is
                   genuinely a unique and rare opportunity for any dancer. The
                   entire faculty has always been encouraging, supportive, and
-                  caring. -Shriya D (Student)
+                  caring. 
                 </p>
+                <p className='mt-4'>-Shriya D (Student)</p>
               </div>
             </SplideSlide>
           </Splide>

@@ -32,8 +32,8 @@ const photos=[
 const PhotoAlbum = () => {
   return (
     <Container>
-        <h2>Rangarpane</h2>
-          <p>A first stepping stone for a student of Dance. Rangarpane at Kalasindhu is more about the entire processof training a students Body and mind with atmost focus and dedication and a time to build a rapport with their Guru . It is an offering and a commitment  to the stage and the Art that they are going  perform for the rest of their lives .  Guru Poornima Gururaja Choreographs a new Mārgam for every student preparing for a Rangārpane and customises for every student for them to feel more innately connected .</p>
+        <h2 style={{fontFamily:'Oswald', marginBottom:'40px'}}>Rangarpane</h2>
+          <p style={{fontFamily:'Open Sans', marginBottom:'40px'}}>A first stepping stone for a student of Dance. Rangarpane at Kalasindhu is more about the entire processof training a students Body and mind with atmost focus and dedication and a time to build a rapport with their Guru . It is an offering and a commitment  to the stage and the Art that they are going  perform for the rest of their lives .  Guru Poornima Gururaja Choreographs a new Mārgam for every student preparing for a Rangārpane and customises for every student for them to feel more innately connected .</p>
       <Row>
         {photos.map((photo, index) => (
           <Col key={index} md={4} className="mb-4">

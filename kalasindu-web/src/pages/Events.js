@@ -21,9 +21,9 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 
 function Events() {
-    useEffect(() => {
-        AOS.init();
-      }, []);
+  useEffect(() => {
+    AOS.init();
+  }, []);
   // Set your countdown values (days, hours, minutes, seconds)
   const countdownValues = {
     days: 28,
@@ -73,15 +73,24 @@ function Events() {
             {/* class left */}
             <div>
               <div>
-                <h1 className="font-weight-bold display-2" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">Upcoming Events</h1>
-                <div className="d-flex mt-5">
+                <h1 style={{fontFamily:'Oswald', fontSize:'64px'}}
+                  className="font-weight-bold"
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                >
+                  Upcoming Events
+                </h1>
+                <div className="d-flex mt-5" style={{fontFamily:'Open Sans'}}>
                   <h4 className="display-6">
                     05 <br /> sep
                   </h4>
-                  <h4 className="ms-5 display-6 mt-3"
-                  data-aos="fade-left"
-                  data-aos-easing="linear"
-                  data-aos-duration="1500">
+                  <h4
+                    className="ms-5 display-6 mt-3"
+                    data-aos="fade-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                  >
                     Nirantara Narmada <FaArrowRightLong className="ms-3" />
                   </h4>
                 </div>
@@ -180,7 +189,12 @@ function Events() {
         <div style={sectionStyle}>
           <img src={eveImg} alt="Your Image Description" style={imgStyle} />
           <div style={contentStyle}>
-            <h1 className="display-1 mb-5" data-aos="fade-up" data-aos-duration="2800" style={{ fontWeight: "700" }}>
+            <h1
+              className="display-1 mb-5"
+              data-aos="fade-up"
+              data-aos-duration="2800"
+              style={{ fontWeight: "700",fontFamily:'Oswald' }}
+            >
               Festivals of Kalasindhu
             </h1>
             <p data-aos="fade-up" data-aos-duration="3000">
@@ -207,7 +221,7 @@ function Events() {
           }}
         >
           <h1
-            style={{ fontSize: "80px", marginRight: "70px", marginTop: "20px" }}
+            style={{ fontSize: "80px", marginRight: "70px", marginTop: "20px",fontFamily:'Oswald' }}
             data-aos="fade-left"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
@@ -241,8 +255,10 @@ function Events() {
                     height: "600px",
                   }}
                 >
-                  <marquee
+                  <marquee loop="infinite"
                     style={{
+                      fontFamily:'Oswald',
+                      loop:'infinite',
                       height: "700px",
                       width: "800px",
                       transform:
@@ -261,10 +277,12 @@ function Events() {
           </div>
           <div
             className="text-light"
-            style={{ width: "512px", height: "408px", fontFamily: "serif" }}
+            style={{ width: "512px", height: "408px", fontFamily:'Open Sans' }}
           >
             <div style={{ marginBottom: "50px" }}>
-              <h3 data-aos="fade-up" data-aos-duration="3000">Why we celebrate ?</h3>
+              <h3 data-aos="fade-up" data-aos-duration="3000">
+                Why we celebrate ?
+              </h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Neque dictum risus
                 commodo vehicula. Mattis suspendisse sed etiam in aliquam sit.
@@ -272,7 +290,9 @@ function Events() {
               </p>
             </div>
             <div style={{ marginBottom: "50px" }}>
-              <h3 data-aos="fade-up" data-aos-duration="3000">How we celebrate ?</h3>
+              <h3 data-aos="fade-up" data-aos-duration="3000">
+                How we celebrate ?
+              </h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Neque dictum risus
                 commodo vehicula. Mattis suspendisse sed etiam in aliquam sit.
@@ -280,7 +300,9 @@ function Events() {
               </p>
             </div>
             <div style={{ marginBottom: "50px" }}>
-              <h3 data-aos="fade-up" data-aos-duration="3000">When we celebrate ?</h3>
+              <h3 data-aos="fade-up" data-aos-duration="3000">
+                When we celebrate ?
+              </h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Neque dictum risus
                 commodo vehicula. Mattis suspendisse sed etiam in aliquam sit.
@@ -302,110 +324,130 @@ function Events() {
                 </section> */}
 
         <div style={{ height: "800px", background: "#003D1B" }}>
-        <div
-          className="d-flex justify-content-between"
-            >
-          <div>
-            <img src={EventsG2} style={{ height: "500px" }} />
-          </div>
-
-          <div style={{ width: "799px", height: "152px", marginTop:'30px' }}>
-            <h1 style={{ fontSize: "80px", color: "#94B074" }}
-            data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1500">
-              Navarasa Navaratri
-            </h1>
-            <p style={{ fontSize: "22px", color: "wheat", marginTop: "80px" }}
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="2500">
-              In memory of her beloved guru Narmada ,{" "}
-              <span style={{ color: "#FFBC11" }}> Nirantara narmada</span> came
-              into existence Lorem ipsum dolor sit amet consectetur. Neque
-              dictum risus commodo vehicula. Mattis suspendisse sed etiam in
-              aliquam sit. Integer pharetra tristique cursus eu mauris et in
-              purus ut.
-            </p>
-          </div>
-
-          <section
-            style={{ position: "relative", width: "20%", overflow: "hidden" }}
-          >
-            <div className="scroll text1">
-              <div
-                style={{
-                  color: "#FCB541",
-                  fontSize: "5em",
-                  background: "#003D1B",
-                  whiteSpace: "nowrap",
-                  fontWeight: "900",
-                  animation: "animate 40s linear infinite",
-                  width: "250px",
-                  height: "600px",
-                }}
-              >
-                <marquee
-                  style={{
-                    height: "700px",
-                    width: "700px",
-                    transform:
-                      "rotate(90deg) translateY(450px) translateX(-10px)",
-                  }}
-                >
-                  Navaratri <span>Navarasa</span> Navaratri{" "}
-                  <span>Navarasa</span> Navaratri <span>Navarasa</span>{" "}
-                  Navaratri <span>Navarasa</span> Navaratri{" "}
-                  <span>Navarasa</span> <span>Navarasa</span> Navaratri{" "}
-                  <span>Navarasa</span> Navaratri
-                </marquee>
-              </div>
+          <div className="d-flex justify-content-between">
+            <div>
+              <img src={EventsG2} style={{ height: "500px" }} />
             </div>
-          </section>
-          </div>
-          <marquee
+
+            <div style={{ width: "799px", height: "152px", marginTop: "30px" }}>
+              <h1
+                style={{ fontSize: "80px", color: "#94B074",fontFamily:'Oswald' }}
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
+                Navarasa Navaratri
+              </h1>
+              <p
+                style={{ fontSize: "22px", color: "wheat", marginTop: "80px",fontFamily:'Open Sans  ' }}
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="2500"
+              >
+                In memory of her beloved guru Narmada ,{" "}
+                <span style={{ color: "#FFBC11" }}> Nirantara narmada</span>{" "}
+                came into existence Lorem ipsum dolor sit amet consectetur.
+                Neque dictum risus commodo vehicula. Mattis suspendisse sed
+                etiam in aliquam sit. Integer pharetra tristique cursus eu
+                mauris et in purus ut.
+              </p>
+            </div>
+
+            <section
+              style={{ position: "relative", width: "20%", overflow: "hidden" }}
+            >
+              <div className="scroll text1">
+                <div
                   style={{
-                    height: "200px",
-                    width: "80%",
-                    transform:
-                      "rotate(0deg) translateY(5px) translateX(2x)",
+                    color: "#FCB541",
+                    fontSize: "5em",
+                    background: "#003D1B",
+                    whiteSpace: "nowrap",
+                    fontWeight: "900",
+                    animation: "animate 40s linear infinite",
+                    width: "250px",
+                    height: "600px",
                   }}
                 >
-                  <img src={eveImg2} style={{height:'200px'}}/>
-                  <img src={eveImg2} style={{height:'200px'}}/>
-                  <img src={eveImg2} style={{height:'200px'}}/>
-                  <img src={eveImg2} style={{height:'200px'}}/>
-                  <img src={eveImg2} style={{height:'200px'}}/>
-                </marquee>
+                  <marquee loop="infinite"
+                    style={{
+                      height: "700px",
+                      width: "700px",
+                      transform:
+                        "rotate(90deg) translateY(450px) translateX(-10px)",
+                    }}
+                  >
+                    Navaratri <span>Navarasa</span> Navaratri{" "}
+                    <span>Navarasa</span> Navaratri <span>Navarasa</span>{" "}
+                    Navaratri <span>Navarasa</span> Navaratri{" "}
+                    <span>Navarasa</span> <span>Navarasa</span> Navaratri{" "}
+                    <span>Navarasa</span> Navaratri
+                  </marquee>
+                </div>
+              </div>
+            </section>
           </div>
-          
+          <marquee loop="infinite"
+            style={{
+              height: "200px",
+              width: "80%",
+              transform: "rotate(0deg) translateY(5px) translateX(2x)",
+            }}
+          >
+            <img src={eveImg2} style={{ height: "200px" }} />
+            <img src={eveImg2} style={{ height: "200px" }} />
+            <img src={eveImg2} style={{ height: "200px" }} />
+            <img src={eveImg2} style={{ height: "200px" }} />
+            <img src={eveImg2} style={{ height: "200px" }} />
+          </marquee>
+        </div>
+
         <section>
           <div style={{ backgroundColor: "#330A0A" }}>
             <div className="container">
               <div className="row">
                 <div className="col-lg-6">
-                  <h1 className="text-white fw-bolder mt-5" style={{fontSize:'64px', fontWeight:'600'}} 
-                  data-aos="fade-down"
-                  data-aos-easing="linear"
-                  data-aos-duration="1500">
+                  <h1
+                    className="text-white fw-bolder mt-5"
+                    style={{ fontSize: "64px", fontWeight: "600",fontFamily:'Oswald' }}
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                  >
                     Workshops and other events
                   </h1>
-                  <p className="text-white fs-5 mt-4"
-                  data-aos="fade-up"
-                  data-aos-easing="linear"
-                  data-aos-duration="1500">
+                  <p style={{fontFamily:'Open sans',fontSize:'22px'}}
+                    className="text-white mt-3"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                  >
                     In memory of her beloved guru Narmada ,
-                    <span style={{color:'#FFBC11'}}>Nirantara narmada</span> came into existence Lorem
-                    ipsum dolor sit amet consectetur. Neque dictum risus commodo
-                    vehicula. Mattis suspendisse sed etiam in aliquam sit.
-                    Integer pharetra tristique cursus eu mauris et in purus ut.
+                    <span style={{ color: "#FFBC11" }}>Nirantara narmada</span>{" "}
+                    came into existence Lorem ipsum dolor sit amet consectetur.
+                    Neque dictum risus commodo vehicula. Mattis suspendisse sed
+                    etiam in aliquam sit. Integer pharetra tristique cursus eu
+                    mauris et in purus ut.
                   </p>
-                <a className="btn btn-lg  rounded "style={{width:'254px', background:'#FCB541', marginTop:'50px'}}>
-                    Enquire Now
-                </a>
+                  <a
+                    className="btn btn-lg  rounded "
+                    style={{
+                      width: "254px",
+                      background: "#FCB541",
+                      marginTop: "20px",
+                      fontWeight:'600'
+                    }}
+                  >
+                  Collaborate with us
+                  </a>
                 </div>
                 <div className="col-lg-6 d-flex justify-content-center align-items-center">
-                  <img src={eveImg4} height={500} alt="Hero Image" width={527} />
+                  <img
+                    src={eveImg4}
+                    height={500}
+                    alt="Hero Image"
+                    width={527}
+                  />
                 </div>
               </div>
             </div>
