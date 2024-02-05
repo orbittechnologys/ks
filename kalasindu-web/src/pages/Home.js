@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../assets/styles/core.css";
+import logo from '../assets/images/logo.png'
 import heroImg from "../assets/images/rsc.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -64,7 +65,7 @@ function Home() {
         <img src={heroImg} className="img-fluid w-100" alt="Hero Image" />
         <div className="hero-overlay d-flex align-items-center justify-content-around">
           <div
-            className="display-6 p-5 text-white text-center fw-bolder"
+            className="social-icon display-6 p-5 text-white text-center fw-bolder"
             data-aos="fade-up"
             data-aos-duration="2800"
           >
@@ -76,7 +77,7 @@ function Home() {
           <div className="d-flex flex-column justify-content-end">
             <div style={{fontFamily:'Oswald'}}>
               <h2
-                className="display-5 p-5 text-white text-center fw-bolder"
+                className="custom-text display-5 p-5 text-white text-center fw-bolder"
                 data-aos="fade-up"
                 data-aos-duration="2800"
               >
@@ -89,7 +90,7 @@ function Home() {
         </div>
       </section>
 
-      <section style={{ height: "45em", backgroundColor: "#E8E5E7" }}>
+      <section className="container-12" style={{backgroundColor: "#E8E5E7" }}>
         <div className="d-flex justify-content-center align-items-center p-5 ">
           <h1 className="fw-bolder display-4" style={{fontFamily:'Oswald'}}>What's New?</h1>
         </div>
@@ -102,23 +103,17 @@ function Home() {
                 </div>*/}
 
         <div className="container">
-  <div className="row">
-    <div className="col-lg-6 col-sm-12">
-      <div
-        className=""
-        style={{
-          width: "100%", 
-          height: "28em",
-          position: "relative",
-          fontFamily: 'Open Sans',
-        }}
-        data-aos="fade-right" data-aos-duration="2800"
-      >
+          <div className="row">
+          <div
+            className="col-lg-12 col-sm-6"
+            style={{ width: "32em", height: "28em", position: "relative", fontFamily:'Open Sans' }}
+            data-aos="fade-right" data-aos-duration="2800"
+          >
             <div>
               <img
                 className="rounded-top img-fluid"
                 src={Hcard1}
-                style={{ width: "100%", height: "13.4375em" }}
+                style={{ width: "32em", height: "13.4375em" }}
               ></img>
             </div>
             <div className="circle-date">
@@ -157,25 +152,18 @@ function Home() {
                 </div>
               </div>
             </div>
-            </div>
           </div>
 
-          <div className="col-lg-6 col-sm-12">
-      <div
-        className=""
-        style={{
-          width: "100%", // Adjusted width for responsiveness
-          height: "28em",
-          position: "relative",
-          fontFamily: 'Open Sans',
-        }}
-        data-aos="fade-left" data-aos-duration="2800"
-      >
+          <div
+            className="col-lg-12 col-sm-6"
+            style={{ width: "32em", height: "28em", position: "relative", fontFamily:'Open Sans' }}
+            data-aos="fade-left" data-aos-duration="2800"
+          >
             <div>
               <img
                 className="rounded-top img-fluid"
                 src={Hcard2}
-                style={{ width: "100%", height: "13.4375em" }}
+                style={{ width: "32em", height: "13.4375em" }}
               ></img>
             </div>
             <div className="circle-date">
@@ -213,10 +201,9 @@ function Home() {
                   <p className="fw-bold">FREE</p>
                 </div>
               </div>
-              </div>
+            </div>
             </div>
           </div>
-        </div>
         </div>
       </section>
 
@@ -256,7 +243,6 @@ function Home() {
 
             <div className="col-lg-6  mt-3">
               <div
-              
                 className="accordion"
                 style={{ border: "none",fontFamily:'Open Sans' }}
                 id="accordionExample"
