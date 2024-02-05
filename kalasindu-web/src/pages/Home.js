@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../assets/styles/core.css";
-import logo from '../assets/images/logo.png'
 import heroImg from "../assets/images/rsc.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -102,17 +101,24 @@ function Home() {
                     </p> 
                 </div>*/}
 
-        <div className="d-flex justify-content-around align-item-center">
-          <div
-            className=""
-            style={{ width: "32em", height: "28em", position: "relative", fontFamily:'Open Sans' }}
-            data-aos="fade-right" data-aos-duration="2800"
-          >
+        <div className="container">
+  <div className="row">
+    <div className="col-lg-6 col-sm-12">
+      <div
+        className=""
+        style={{
+          width: "100%", 
+          height: "28em",
+          position: "relative",
+          fontFamily: 'Open Sans',
+        }}
+        data-aos="fade-right" data-aos-duration="2800"
+      >
             <div>
               <img
                 className="rounded-top img-fluid"
                 src={Hcard1}
-                style={{ width: "32em", height: "13.4375em" }}
+                style={{ width: "100%", height: "13.4375em" }}
               ></img>
             </div>
             <div className="circle-date">
@@ -151,17 +157,25 @@ function Home() {
                 </div>
               </div>
             </div>
+            </div>
           </div>
-          <div
-            className=""
-            style={{ width: "32em", height: "28em", position: "relative", fontFamily:'Open Sans' }}
-            data-aos="fade-left" data-aos-duration="2800"
-          >
+
+          <div className="col-lg-6 col-sm-12">
+      <div
+        className=""
+        style={{
+          width: "100%", // Adjusted width for responsiveness
+          height: "28em",
+          position: "relative",
+          fontFamily: 'Open Sans',
+        }}
+        data-aos="fade-left" data-aos-duration="2800"
+      >
             <div>
               <img
                 className="rounded-top img-fluid"
                 src={Hcard2}
-                style={{ width: "32em", height: "13.4375em" }}
+                style={{ width: "100%", height: "13.4375em" }}
               ></img>
             </div>
             <div className="circle-date">
@@ -199,8 +213,10 @@ function Home() {
                   <p className="fw-bold">FREE</p>
                 </div>
               </div>
+              </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
@@ -240,6 +256,7 @@ function Home() {
 
             <div className="col-lg-6  mt-3">
               <div
+              
                 className="accordion"
                 style={{ border: "none",fontFamily:'Open Sans' }}
                 id="accordionExample"

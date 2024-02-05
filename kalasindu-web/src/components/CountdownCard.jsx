@@ -37,7 +37,7 @@ const CountdownCard = ({ days, hours, minutes, seconds }) => {
         clearInterval(interval);
         localStorage.removeItem('countdownEndTime');
         localStorage.removeItem('timeLeft');
-        // You can perform any action when the timer expires
+        
       }
     }, 1000);
 
@@ -56,7 +56,7 @@ const CountdownCard = ({ days, hours, minutes, seconds }) => {
         padding: '15px',
         borderRadius: '8px',
         boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
-        marginLeft: '1220px',
+        marginLeft: '1200px',
         marginTop: '20px',
       }}
     >
