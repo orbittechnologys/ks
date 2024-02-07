@@ -67,7 +67,7 @@ function Events() {
   return (
     <>
       <Navbar />
-      <div style={{ backgroundColor: "rgb(0, 0, 0)", overflow:'hidden' }}>
+      <div style={{ backgroundColor: "rgb(0, 0, 0)", overflow: "hidden" }}>
         <Container
           fluid
           className="bg-dark text-white mt-5 position-relative" // Add position-relative class
@@ -236,117 +236,86 @@ function Events() {
                 </section> */}
         <div
           className="container-fluid"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "end",
-            alignItems: "end",
-            color: "#94B074",
-            background: "#003D1B",
-            width: "100%",
-          }}
+          style={{ height: "800px", background: "#003D1B" }}
         >
-          <h1
-            className=""
-            style={{
-              fontSize: "80px",
-              marginRight: "70px",
-              marginTop: "20px",
-              fontFamily: "Oswald",
-            }}
-            data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-easing="ease-in"
-          >
-            Navarasa Navaratri
-          </h1>
-        </div>
-
-        <div
-          className="d-flex justify-content-between"
-          style={{ backgroundColor: "#003D1B" }}
-        >
-          <div>
-            <section
-              style={{
-                position: "relative",
-                width: "100%",
-                overflow: "hidden",
-              }}
-            >
-              <div className="scroll text1">
-                <div
+          <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
+            {/* Marquee section - Hidden on mobile */}
+            <div className="d-none d-md-block">
+              <div
+                style={{
+                  color: "#FCB541",
+                  fontSize: "5em",
+                  background: "#003D1B",
+                  whiteSpace: "nowrap",
+                  fontWeight: "900",
+                  animation: "animate 40s linear infinite",
+                  width: "250px",
+                  height: "600px",
+                }}
+              >
+                <marquee
+                  loop="infinite"
                   style={{
-                    color: "#FCB541",
-                    fontSize: "5em",
-                    background: "#003D1B",
-                    whiteSpace: "nowrap",
-                    fontWeight: "900",
-                    animation: "animate 40s linear infinite",
-                    width: "250px",
-                    height: "600px",
+                    fontFamily: "Oswald",
+                    loop: "infinite",
+                    height: "700px",
+                    width: "800px",
+                    transform:
+                      "rotate(-90deg) translateY(40px) translateX(-50px)",
                   }}
                 >
-                  <marquee
-                    loop="infinite"
-                    style={{
-                      fontFamily: "Oswald",
-                      loop: "infinite",
-                      height: "700px",
-                      width: "800px",
-                      transform:
-                        "rotate(-90deg) translateY(50px) translateX(-10px)",
-                    }}
-                  >
-                    Navaratri <span>Navarasa</span> Navaratri{" "}
-                    <span>Navarasa</span> Navaratri <span>Navarasa</span>{" "}
-                    Navaratri <span>Navarasa</span> Navaratri{" "}
-                    <span>Navarasa</span> <span>Navarasa</span> Navaratri{" "}
-                    <span>Navarasa</span> Navaratri
-                  </marquee>
-                </div>
+                  Navaratri <span>Navarasa</span> Navaratri{" "}
+                  <span>Navarasa</span> Navaratri <span>Navarasa</span>{" "}
+                  Navaratri <span>Navarasa</span> Navaratri{" "}
+                  <span>Navarasa</span> <span>Navarasa</span> Navaratri{" "}
+                  <span>Navarasa</span> Navaratri
+                </marquee>
               </div>
-            </section>
-          </div>
-          <div
-            className="text-light"
-            style={{ width: "512px", height: "408px", fontFamily: "Open Sans" }}
-          >
-            <div style={{ marginBottom: "50px" }}>
-              <h3 data-aos="fade-up" data-aos-duration="3000">
-                Why we celebrate ?
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Neque dictum risus
-                commodo vehicula. Mattis suspendisse sed etiam in aliquam sit.
-                Integer pharetra tristique cursus eu mauris et in purus ut.{" "}
-              </p>
             </div>
-            <div style={{ marginBottom: "50px" }}>
-              <h3 data-aos="fade-up" data-aos-duration="3000">
-                How we celebrate ?
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Neque dictum risus
-                commodo vehicula. Mattis suspendisse sed etiam in aliquam sit.
-                Integer pharetra tristique cursus eu mauris et in purus ut.{" "}
-              </p>
-            </div>
-            <div style={{ marginBottom: "50px" }}>
-              <h3 data-aos="fade-up" data-aos-duration="3000">
-                When we celebrate ?
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Neque dictum risus
-                commodo vehicula. Mattis suspendisse sed etiam in aliquam sit.
-                Integer pharetra tristique cursus eu mauris et in purus ut.{" "}
-              </p>
-            </div>
-          </div>
 
-          <div>
+            {/* Text section */}
+            <div
+              className="text-light mb-4 mb-md-0"
+              style={{ maxWidth: "512px", fontFamily: "Open Sans" }}
+            >
+              <div style={{ marginBottom: "50px" }}>
+                <h3 data-aos="fade-up" data-aos-duration="3000">
+                  Why we celebrate ?
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Neque dictum risus
+                  commodo vehicula. Mattis suspendisse sed etiam in aliquam sit.
+                  Integer pharetra tristique cursus eu mauris et in purus ut.{" "}
+                </p>
+              </div>
+              <div style={{ marginBottom: "50px" }}>
+                <h3 data-aos="fade-up" data-aos-duration="3000">
+                  How we celebrate ?
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Neque dictum risus
+                  commodo vehicula. Mattis suspendisse sed etiam in aliquam sit.
+                  Integer pharetra tristique cursus eu mauris et in purus ut.{" "}
+                </p>
+              </div>
+              <div style={{ marginBottom: "50px" }}>
+                <h3 data-aos="fade-up" data-aos-duration="3000">
+                  When we celebrate ?
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Neque dictum risus
+                  commodo vehicula. Mattis suspendisse sed etiam in aliquam sit.
+                  Integer pharetra tristique cursus eu mauris et in purus ut.{" "}
+                </p>
+              </div>
+            </div>
+
+            {/* Image section */}
             <div>
-              <img src={EventsG1} style={{ height: "600px" }} />
+              <img
+                src={EventsG1}
+                style={{ height: "auto", maxWidth: "100%" }}
+              />
             </div>
           </div>
         </div>
@@ -362,7 +331,10 @@ function Events() {
         >
           <div className="d-flex justify-content-between">
             <div>
-              <img src={EventsG2} style={{ height: "500px" }} />
+              <img
+                src={EventsG2}
+                style={{ height: "450px", padding: "15px" }}
+              />
             </div>
 
             <div style={{ width: "799px", height: "152px", marginTop: "30px" }}>
