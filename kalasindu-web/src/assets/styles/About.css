@@ -62,3 +62,10 @@
         opacity: 1;
     }
 }
+
+
+
+.banner img{
+    position: absolute;
+    object-fit: cover;
+}
