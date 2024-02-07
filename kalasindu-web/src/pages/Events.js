@@ -42,13 +42,12 @@ function Events() {
     backgroundRepeat: "no-repeat",
     // backgroundSize: "cover",
     backgroundPosition: "center",
-    height: "100vh",
+    
   };
 
   const sectionStyle = {
     position: "relative",
     textAlign: "center",
-    height: "652px",
   };
 
   const imgStyle = {
@@ -76,7 +75,7 @@ function Events() {
           <Row className="p-3 justify-content-around align-items-center">
             {/* Left section */}
             <Col lg={6} md={12}>
-              <div>
+              <div className="mt-5">
                 <h1
                   style={{ fontFamily: "Oswald", fontSize: "64px" }}
                   className="custom-text2 font-weight-bold"
@@ -122,7 +121,7 @@ function Events() {
             </Col>
             {/* Right section */}
             <Col lg={6} md={12}>
-              <div className="position-relative">
+              <div className="position-relative mt-5 text-center ">
                 {" "}
                 {/* Add position-relative class */}
                 <img
@@ -130,6 +129,7 @@ function Events() {
                   className="img-fluid"
                   alt="About R"
                   style={{ maxWidth: "312px", maxHeight: "424px" }}
+                  
                 />
               </div>
             </Col>
@@ -205,9 +205,9 @@ function Events() {
 
         {/* Events baground */}
 
-        <div style={sectionStyle}>
+        <div style={sectionStyle} className="mt-5">
           <Container>
-            <img src={eveImg} alt="Your Image Description" style={imgStyle} />
+            <img src={eveImg} alt="Your Image Description" style={imgStyle} className="img-fluid" />
             <div style={contentStyle}>
               <h1
                 className="custom-text2 display-1 mb-5"
@@ -250,7 +250,6 @@ function Events() {
                   fontWeight: "900",
                   animation: "animate 40s linear infinite",
                   width: "250px",
-                  height: "600px",
                 }}
               >
                 <marquee
@@ -259,7 +258,7 @@ function Events() {
                     fontFamily: "Oswald",
                     loop: "infinite",
                     height: "700px",
-                    width: "800px",
+                    width: "600px",
                     transform:
                       "rotate(-90deg) translateY(40px) translateX(-50px)",
                   }}
@@ -278,7 +277,7 @@ function Events() {
               className="text-light mb-4 mb-md-0"
               style={{ maxWidth: "512px", fontFamily: "Open Sans" }}
             >
-              <div style={{ marginBottom: "50px" }}>
+              <div style={{  }}>
                 <h3 data-aos="fade-up" data-aos-duration="3000">
                   Why we celebrate ?
                 </h3>
@@ -395,7 +394,7 @@ function Events() {
                     mauris et in purus ut.
                   </p>
                   <a
-                    className="btn btn-lg rounded"
+                    className="btn btn-lg rounded mb-5"
                     style={{
                       width: "254px",
                       background: "#FCB541",

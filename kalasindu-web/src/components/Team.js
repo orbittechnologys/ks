@@ -15,7 +15,7 @@ const Team = () => {
   const splideRef = useRef(null);
 
   return (
-    <section className="container-fluid" style={{ backgroundColor: "rgb(0, 0, 0)" }}>
+    <section className="" style={{ backgroundColor: "rgb(0, 0, 0)" }}>
       <div className="container p-5">
         <h2
           className="text-center custom-text mt-4 mb-4"
@@ -32,6 +32,7 @@ const Team = () => {
             rewind: true,
             autoplay: true, // Enable continuous auto-scrolling
             interval: 2000, // Set the interval time in milliseconds (e.g., 3000ms = 3 seconds)
+            
           }}
           ref={splideRef}
         >

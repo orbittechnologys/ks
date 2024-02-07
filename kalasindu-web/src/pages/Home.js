@@ -61,6 +61,9 @@ function Home() {
   return (
     <>
       <Navbar active={"Home"} />
+
+
+      <div style={{overflow: "hidden"}}>
       <section className="hero-wrapper position-relative">
         <img src={heroImg} className="img-fluid w-100" alt="Hero Image" />
         <div className="hero-overlay d-flex align-items-center justify-content-around">
@@ -70,21 +73,20 @@ function Home() {
             data-aos-duration="2800"
           >
             <FaFacebook />
-            <br />
+            
             <RiInstagramFill />
             <FaYoutube />
           </div>
           <div className="d-flex flex-column justify-content-end">
             <div style={{ fontFamily: "Oswald" }}>
               <h2
-                className="custom-text display-5 p-5 text-white text-center fw-bolder"
+                className="custom-text display-5 p-5 text-white text-center fw-bolder mt-4"
                 data-aos="fade-up"
                 data-aos-duration="2800"
               >
                 Parampara is like an umbilical cord that connects dancers to the
                 beginnings of their art form.
-                <br />
-                <br />
+               
                 <span className="d-flex justify-content-end">
                   -Poornima Gururaj
                 </span>
@@ -200,7 +202,7 @@ function Home() {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundColor: "rgba(36, 17, 10, 1)",
-          height: "100vh",
+          
         }}
       >
         <div className="container p-5">
@@ -435,7 +437,6 @@ function Home() {
         className="container-fluid"
         style={{
           backgroundColor: "rgb(14, 14, 14)",
-          height: "100vh",
           paddingTop: "5.5em",
         }}
       >
@@ -448,7 +449,7 @@ function Home() {
               fontFamily: "Oswald",
             }}
           >
-            Glimpse of Kalasindhu
+            Glimpse of Kalasindhu 
           </h2>
           <div
             className="d-flex justify-content-center mt-5"
@@ -575,6 +576,7 @@ function Home() {
           </div>
         </div>
       </section>
+      </div>
 
       <Footer />
     </>
