@@ -236,7 +236,7 @@ function Events() {
                 </section> */}
         <div
           className="container-fluid"
-          style={{ height: "800px", background: "#003D1B" }}
+          style={{  background: "#003D1B" }}
         >
           <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
             {/* Marquee section - Hidden on mobile */}
@@ -325,7 +325,7 @@ function Events() {
                     <div className='hero-overlay d-flex align-items-center justify-content-center'></div>
                 </section> */}
 
-<div className="container-fluid" style={{ height: "800px", background: "#003D1B" }}>
+<div className="container-fluid" style={{ background: "#003D1B"}}>
       <div className="d-none d-md-flex justify-content-between"> {/* Hide on mobile */}
       
         <div>
