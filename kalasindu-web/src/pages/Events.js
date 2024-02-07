@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Navbar from "../components/Navbar";
 import CountdownCard from "../components/CountdownCard";
 import EventsG1 from "../assets/images/eventsImage1.png";
-import EventsG2 from "../assets/images/EventsImage2.png";
+import EventsG2 from "../assets/images/EventsImg2.png";
 import eveImg from "../assets/images/Events1.png";
 import eveImg2 from "../assets/images/EventsImage3.png";
 import eveImg4 from "../assets/images/desktop-4.png";
@@ -66,80 +66,81 @@ function Events() {
   };
   return (
     <>
-      <div style={{ backgroundColor: "rgb(0, 0, 0)" }}>
-        <Navbar />
+      <Navbar />
+      <div style={{ backgroundColor: "rgb(0, 0, 0)", overflow:'hidden' }}>
         <Container
-  fluid
-  className="bg-dark text-white mt-5 position-relative" // Add position-relative class
-  style={backgroundImageStyle}
->
-  <Row className="p-5 justify-content-around align-items-center">
-    {/* Left section */}
-    <Col lg={6} md={12}>
-      <div>
-        <h1
-          style={{ fontFamily: "Oswald", fontSize: "64px" }}
-          className="custom-text2 font-weight-bold"
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
+          fluid
+          className="bg-dark text-white mt-5 position-relative" // Add position-relative class
+          style={backgroundImageStyle}
         >
-          Upcoming Events
-        </h1>
-        <div
-          className="d-flex flex-column mt-5"
-          style={{ fontFamily: "Open Sans" }}
-        >
-          <div className="d-flex">
-            <h4 className="custom-text display-6">
-              05 <br /> sep
-            </h4>
-            <h4
-              className="custom-text ms-5 display-6 mt-3"
-              data-aos="fade-left"
-              data-aos-easing="linear"
-              data-aos-duration="1500"
-            >
-              Nirantara Narmada <FaArrowRightLong className="ms-3" />
-            </h4>
-          </div>
-          <div className="d-flex mt-5">
-            <h4 className="custom-text display-6">
-              20 <br /> sep
-            </h4>
-            <h4
-              className="custom-text ms-5 display-6 mt-3"
-              data-aos="fade-left"
-              data-aos-easing="linear"
-              data-aos-duration="1500"
-              onClick={handleButtonClick}
-            >
-              Ganesh uttsav <FaArrowRightLong className="ms-3" />
-            </h4>
-          </div>
-        </div>
-      </div>
-    </Col>
-    {/* Right section */}
-    <Col lg={6} md={12}>
-      <div className="position-relative"> {/* Add position-relative class */}
-        <img
-          src={AboutR}
-          className="img-fluid"
-          alt="About R"
-          style={{ maxWidth: "312px", maxHeight: "424px" }}
-        />
-      </div>
-    </Col>
-  </Row>
-  {/* Counter value */}
-  <Row className="justify-content-center">
-    <Col lg={6} md={12}>
-      <CountdownCard {...countdownValues} />
-    </Col>
-  </Row>
-</Container>
-
+          <Row className="p-3 justify-content-around align-items-center">
+            {/* Left section */}
+            <Col lg={6} md={12}>
+              <div>
+                <h1
+                  style={{ fontFamily: "Oswald", fontSize: "64px" }}
+                  className="custom-text2 font-weight-bold"
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                >
+                  Upcoming Events
+                </h1>
+                <div
+                  className="d-flex flex-column mt-5"
+                  style={{ fontFamily: "Open Sans" }}
+                >
+                  <div className="d-flex">
+                    <h4 className="custom-text display-6">
+                      05 <br /> sep
+                    </h4>
+                    <h4
+                      className="custom-text ms-5 display-6 mt-3"
+                      data-aos="fade-left"
+                      data-aos-easing="linear"
+                      data-aos-duration="1500"
+                    >
+                      Nirantara Narmada <FaArrowRightLong className="ms-3" />
+                    </h4>
+                  </div>
+                  <div className="d-flex mt-5">
+                    <h4 className="custom-text display-6">
+                      20 <br /> sep
+                    </h4>
+                    <h4
+                      className="custom-text ms-5 display-6 mt-3"
+                      data-aos="fade-left"
+                      data-aos-easing="linear"
+                      data-aos-duration="1500"
+                      onClick={handleButtonClick}
+                    >
+                      Ganesh uttsav <FaArrowRightLong className="ms-3" />
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            {/* Right section */}
+            <Col lg={6} md={12}>
+              <div className="position-relative">
+                {" "}
+                {/* Add position-relative class */}
+                <img
+                  src={AboutR}
+                  className="img-fluid"
+                  alt="About R"
+                  style={{ maxWidth: "312px", maxHeight: "424px" }}
+                />
+              </div>
+            </Col>
+          </Row>
+          {/* Counter value */}
+          <Row className="justify-content-center">
+            <Col lg={6} md={12}>
+              <CountdownCard {...countdownValues} />
+            </Col>
+          </Row>
+        </Container>
 
         {/* Card section */}
         {showCard && (
@@ -502,7 +503,6 @@ function Events() {
                 </div>
               </div>
             </div>
-            
           </div>
         </section>
         <Footer />

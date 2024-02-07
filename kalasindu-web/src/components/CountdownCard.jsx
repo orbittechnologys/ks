@@ -45,7 +45,7 @@ const CountdownCard = ({ days, hours, minutes, seconds }) => {
   }, [endTime, timeLeft]);
 
   return (
-    <div
+    <div className='mb-4'
   style={{
     display: 'flex',
     justifyContent: 'space-evenly',
@@ -54,8 +54,10 @@ const CountdownCard = ({ days, hours, minutes, seconds }) => {
     height: 'auto', // Set height to auto for mobile screens
     backgroundColor: '#FCB541',
     padding: '15px',
+    // marginBottom:'20px',
     borderRadius: '8px',
     boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+    overflow:'hidden',
     // Add media query for adjusting styles for larger screens
     '@media (min-width: 768px)': {
       width: '525px', // Adjust width for larger screens
