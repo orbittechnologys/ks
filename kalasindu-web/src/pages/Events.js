@@ -325,101 +325,42 @@ function Events() {
                     <div className='hero-overlay d-flex align-items-center justify-content-center'></div>
                 </section> */}
 
-        <div
-          className="container-fluid"
-          style={{ height: "800px", background: "#003D1B" }}
-        >
-          <div className="d-flex justify-content-between">
-            <div>
-              <img
-                src={EventsG2}
-                style={{ height: "450px", padding: "15px" }}
-              />
-            </div>
-
-            <div style={{ width: "799px", height: "152px", marginTop: "30px" }}>
-              <h1
-                style={{
-                  fontSize: "80px",
-                  color: "#94B074",
-                  fontFamily: "Oswald",
-                }}
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500"
-              >
-                Navarasa Navaratri
-              </h1>
-              <p
-                style={{
-                  fontSize: "22px",
-                  color: "wheat",
-                  marginTop: "80px",
-                  fontFamily: "Open Sans  ",
-                }}
-                data-aos="fade-up"
-                data-aos-easing="linear"
-                data-aos-duration="2500"
-              >
-                In memory of her beloved guru Narmada ,{" "}
-                <span style={{ color: "#FFBC11" }}> Nirantara narmada</span>{" "}
-                came into existence Lorem ipsum dolor sit amet consectetur.
-                Neque dictum risus commodo vehicula. Mattis suspendisse sed
-                etiam in aliquam sit. Integer pharetra tristique cursus eu
-                mauris et in purus ut.
-              </p>
-            </div>
-
-            <section
-              style={{ position: "relative", width: "20%", overflow: "hidden" }}
-            >
-              <div className="scroll text1">
-                <div
-                  style={{
-                    color: "#FCB541",
-                    fontSize: "5em",
-                    background: "#003D1B",
-                    whiteSpace: "nowrap",
-                    fontWeight: "900",
-                    animation: "animate 40s linear infinite",
-                    width: "250px",
-                    height: "600px",
-                  }}
-                >
-                  <marquee
-                    loop="infinite"
-                    style={{
-                      height: "700px",
-                      width: "700px",
-                      transform:
-                        "rotate(90deg) translateY(450px) translateX(-10px)",
-                    }}
-                  >
-                    Navaratri <span>Navarasa</span> Navaratri{" "}
-                    <span>Navarasa</span> Navaratri <span>Navarasa</span>{" "}
-                    Navaratri <span>Navarasa</span> Navaratri{" "}
-                    <span>Navarasa</span> <span>Navarasa</span> Navaratri{" "}
-                    <span>Navarasa</span> Navaratri
-                  </marquee>
-                </div>
-              </div>
-            </section>
-          </div>
-          <marquee
-            loop="infinite"
-            style={{
-              height: "200px",
-              width: "80%",
-              transform: "rotate(0deg) translateY(5px) translateX(2x)",
-            }}
-          >
-            <img src={eveImg2} style={{ height: "200px" }} />
-            <img src={eveImg2} style={{ height: "200px" }} />
-            <img src={eveImg2} style={{ height: "200px" }} />
-            <img src={eveImg2} style={{ height: "200px" }} />
-            <img src={eveImg2} style={{ height: "200px" }} />
-          </marquee>
+<div className="container-fluid" style={{ height: "800px", background: "#003D1B" }}>
+      <div className="d-none d-md-flex justify-content-between"> {/* Hide on mobile */}
+      
+        <div>
+          <img src={EventsG2} style={{ height: "450px", padding: "15px" }} />
         </div>
+
+        <div style={{ width: "799px", height: "152px", marginTop: "30px" }}>
+          <h1 style={{ fontSize: "80px", color: "#94B074", fontFamily: "Oswald" }} data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            Navarasa Navaratri
+          </h1>
+          <p style={{ fontSize: "22px", color: "wheat", marginTop: "80px", fontFamily: "Open Sans" }} data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2500">
+            In memory of her beloved guru Narmada, <span style={{ color: "#FFBC11" }}>Nirantara narmada</span> came into existence Lorem ipsum dolor sit amet consectetur. Neque dictum risus commodo vehicula. Mattis suspendisse sed etiam in aliquam sit. Integer pharetra tristique cursus eu mauris et in purus ut.
+          </p>
+        </div>
+
+        <section style={{ position: "relative", width: "20%", overflow: "hidden" }}>
+          <div className="scroll text1">
+            <div style={{ color: "#FCB541", fontSize: "5em", background: "#003D1B", whiteSpace: "nowrap", fontWeight: "900", animation: "animate 40s linear infinite", width: "250px", height: "600px" }}>
+              <marquee loop="infinite" style={{ height: "700px", width: "700px", transform: "rotate(90deg) translateY(450px) translateX(-10px)" }}>
+                Navaratri <span>Navarasa</span> Navaratri <span>Navarasa</span> Navaratri <span>Navarasa</span> Navaratri <span>Navarasa</span> Navaratri <span>Navarasa</span> <span>Navarasa</span> Navaratri <span>Navarasa</span> Navaratri
+              </marquee>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* Marquee for laptop view */}
+      <marquee className="d-none d-md-block" loop="infinite" style={{ height: "200px", width: "80%", transform: "rotate(0deg) translateY(5px) translateX(2x)" }}>
+        <img src={eveImg2} style={{ height: "200px" }} />
+        <img src={eveImg2} style={{ height: "200px" }} />
+        <img src={eveImg2} style={{ height: "200px" }} />
+        <img src={eveImg2} style={{ height: "200px" }} />
+        <img src={eveImg2} style={{ height: "200px" }} />
+      </marquee>
+    </div>
 
         <section>
           <div style={{ backgroundColor: "#330A0A" }}>
