@@ -259,9 +259,9 @@ function Events() {
                     fontFamily: "Oswald",
                     loop: "infinite",
                     height: "700px",
-                    width: "800px",
+                    width: "600px",
                     transform:
-                      "rotate(-90deg) translateY(40px) translateX(-50px)",
+                      "rotate(-90deg) translateY(140px) translateX(50px)",
                   }}
                 >
                   Navaratri <span>Navarasa</span> Navaratri{" "}
