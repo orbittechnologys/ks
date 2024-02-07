@@ -47,12 +47,12 @@ function Gallery() {
 
   return (
     <>
-      <div style={{ backgroundColor: 'black' }}>
         <Navbar />
+        <div style={{ backgroundColor: 'black', overflow: "hidden" }}>
         <div>
           <div
             style={{
-              height: "100vh",
+              
               border: "2px solid black",
               backgroundColor: "black",
             }}
@@ -61,7 +61,7 @@ function Gallery() {
               style={{
                 display: "flex",
                 justifyContent: "space-around",
-                marginTop: "180px",
+                marginTop: "100px",
               }}
             >
               <div style={{ position: "relative", overflow: "hidden", zIndex: 1 }}
@@ -76,8 +76,8 @@ function Gallery() {
                       left: "50%",
                       transform: "translate(-50%, -50%)",
                       color: hovered1 ? "yellow" : "white",
-                      fontSize: "50px",
                       textAlign: "center",
+                      fontSize: "calc(0.5rem + 3vw)",
                       cursor: "pointer",
                       fontFamily: 'Oswald',
                       transition: "color 0.2s",
@@ -89,6 +89,7 @@ function Gallery() {
                   <img
                     src={require("../assets/images/GM1.png")}
                     alt="Image 1"
+                    className="img-fluid"
                     style={{
                       width: "100%",
                       transform: hovered1 ? "scale(1.1)" : "scale(1)",
@@ -110,7 +111,7 @@ function Gallery() {
                       left: "50%",
                       transform: "translate(-50%, -50%)",
                       color: hovered2 ? "yellow" : "white",
-                      fontSize: "50px",
+                      fontSize: "calc(0.5rem + 3vw)",
                       textAlign: "center",
                       cursor: "pointer",
                       fontFamily: 'Oswald',
@@ -123,6 +124,7 @@ function Gallery() {
                   <img
                     src={require("../assets/images/GM2.png")}
                     alt="Image 2"
+                    className="img-fluid"
                     style={{
                       width: "100%",
                       transform: hovered2 ? "scale(1.1)" : "scale(1)",
@@ -144,7 +146,7 @@ function Gallery() {
                       left: "50%",
                       transform: "translate(-50%, -50%)",
                       color: hovered3 ? "yellow" : "white",
-                      fontSize: "50px",
+                      fontSize: "calc(0.5rem + 3vw)",
                       textAlign: "center",
                       cursor: "pointer",
                       fontFamily: 'Oswald',
@@ -157,6 +159,7 @@ function Gallery() {
                   <img
                     src={require("../assets/images/GM3.png")}
                     alt="Image 3"
+                    className="img-fluid"
                     style={{
                       width: "100%",
                       transform: hovered3 ? "scale(1.1)" : "scale(1)",
@@ -178,7 +181,7 @@ function Gallery() {
                       left: "50%",
                       transform: "translate(-50%, -50%)",
                       color: hovered4 ? "yellow" : "white",
-                      fontSize: "50px",
+                      fontSize: "calc(0.5rem + 3vw)",
                       textAlign: "center",
                       cursor: "pointer",
                       fontFamily: 'Oswald',
@@ -191,6 +194,7 @@ function Gallery() {
                   <img
                     src={require("../assets/images/GM4.png")}
                     alt="Image 4"
+                    className="img-fluid"
                     style={{
                       width: "100%",
                       transform: hovered4 ? "scale(1.1)" : "scale(1)",
@@ -202,19 +206,19 @@ function Gallery() {
             </div>
           </div>
 
-          <div id="section1" style={{ textAlign: 'center', color: 'white', backgroundColor: 'black', marginTop: '50px' }}>
-            <PhotoAlbum />
+          <div id="section1" style={{ textAlign: 'center', color: 'white', backgroundColor: 'black' }} >
+            <PhotoAlbum  />
           </div>
 
-          <div id="section2" style={{ textAlign: 'center', color: 'white', backgroundColor: 'black', marginTop: '50px' }}>
+          <div id="section2" style={{ textAlign: 'center', color: 'white', backgroundColor: 'black' }}>
             <PhotoAlbum1 />
           </div>
 
-          <div id="section3" style={{ textAlign: 'center', color: 'white', backgroundColor: 'black', marginTop: '50px' }}>
+          <div id="section3" style={{ textAlign: 'center', color: 'white', backgroundColor: 'black' }}>
             <PhotoAlbum2 />
           </div>
 
-          <div id="section4" style={{ textAlign: 'center', color: 'white', backgroundColor: 'black', marginTop: '50px', marginBottom: '80px' }}>
+          <div id="section4" style={{ textAlign: 'center', color: 'white', backgroundColor: 'black' }}>
             <PhotoAlbum3 />
           </div>
         </div>

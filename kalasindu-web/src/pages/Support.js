@@ -13,14 +13,14 @@ function Support() {
     <>
       <Navbar />
 
-      <section className='hero-wrapper position-relative' style={{height:'960px'}}>
-        <img src={supImg} className='img-fluid w-100' alt='Hero Image'  />
+      <section className='hero-wrapper position-relative mt-5'>
+        <img src={supImg} className='img-fluid w-100 mt-4' alt='Hero Image'  />
         <div className='hero-overlay text-center d-flex flex-column justify-content-center align-items-center text-white'>
-          <h3 style={{fontSize:'48px', fontFamily:'Oswald'}}data-aos="fade-down" data-aos-duration="2800">Support Us</h3>
+          <h3 style={{fontSize:'48px', fontFamily:'Oswald'}}data-aos="fade-down" data-aos-duration="2800" className='mt-5'>Support Us</h3>
           <a
-                className="btn btn-lg  rounded  mt-4"
+                className="btn btn-lg  rounded "
                 style={{
-                  width: "286px",
+                  
                   background: "#FCB541",
                   color: "black",
                   fontWeight:'600'
@@ -32,7 +32,7 @@ function Support() {
       </section>
 
 
-      <section className='p-4 mt-5' style={{fontFamily:'Open Sans'}}>
+      <section className='p-4 ' style={{fontFamily:'Open Sans'}}>
         <div className="container p-4 mt-5 shadow-sm mb-5">
           <div className="text-center mt-3" data-aos="fade-up" data-aos-duration="1000">
             <h3 className="fw-bolder">By sponsoring us</h3>
