@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import Navbar from "../components/Navbar";
 import CountdownCard from "../components/CountdownCard";
 import EventsG1 from "../assets/images/eventsImage1.png";
 import EventsG2 from "../assets/images/EventsImage2.png";
 import eveImg from "../assets/images/Events1.png";
 import eveImg2 from "../assets/images/EventsImage3.png";
-import eveImg3 from "../assets/images/edu-2.png";
 import eveImg4 from "../assets/images/desktop-4.png";
 import Footer from "../components/Footer";
 import AboutR from "../assets/images/AboutR.png";
@@ -38,11 +38,11 @@ function Events() {
     setShowCard(!showCard);
   };
   const backgroundImageStyle = {
-    backgroundImage: `url(${AboutR1})`,
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${AboutR1})`,
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "Right",
-    backdropFilter: "blur(8px)",
-    opacity: "0.7",
+    // backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "100vh",
   };
 
   const sectionStyle = {
@@ -68,70 +68,89 @@ function Events() {
     <>
       <div style={{ backgroundColor: "rgb(0, 0, 0)" }}>
         <Navbar />
-        <div className="bg-dark text-white mt-5" style={backgroundImageStyle}>
-          <div className="p-5 d-flex justify-content-around ">
-            {/* class left */}
-            <div>
-              <div>
-                <h1 style={{fontFamily:'Oswald', fontSize:'64px'}}
-                  className="font-weight-bold"
-                  data-aos="fade-down"
-                  data-aos-easing="linear"
-                  data-aos-duration="1500"
-                >
-                  Upcoming Events
-                </h1>
-                <div className="d-flex mt-5" style={{fontFamily:'Open Sans'}}>
-                  <h4 className="display-6">
-                    05 <br /> sep
-                  </h4>
-                  <h4
-                    className="ms-5 display-6 mt-3"
-                    data-aos="fade-left"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500"
-                  >
-                    Nirantara Narmada <FaArrowRightLong className="ms-3" />
-                  </h4>
-                </div>
-                <div className="d-flex mt-5">
-                  <h4 className="display-6">
-                    20 <br /> sep
-                  </h4>
-                  <h4
-                    className="ms-5 display-6 mt-3"
-                    data-aos="fade-left"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500"
-                    onClick={handleButtonClick}
-                  >
-                    Ganesh uttsav <FaArrowRightLong className="ms-3" />
-                  </h4>
-                </div>
-              </div>
-            </div>
-            {/* class right*/}
-            <div>
-              <img
-                src={AboutR}
-                className="img-fluid"
-                alt="About R"
-                style={{ maxWidth: "312px", maxHeight: "424px" }}
-              ></img>
-            </div>
+        <Container
+  fluid
+  className="bg-dark text-white mt-5 position-relative" // Add position-relative class
+  style={backgroundImageStyle}
+>
+  <Row className="p-5 justify-content-around align-items-center">
+    {/* Left section */}
+    <Col lg={6} md={12}>
+      <div>
+        <h1
+          style={{ fontFamily: "Oswald", fontSize: "64px" }}
+          className="custom-text2 font-weight-bold"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          Upcoming Events
+        </h1>
+        <div
+          className="d-flex flex-column mt-5"
+          style={{ fontFamily: "Open Sans" }}
+        >
+          <div className="d-flex">
+            <h4 className="custom-text display-6">
+              05 <br /> sep
+            </h4>
+            <h4
+              className="custom-text ms-5 display-6 mt-3"
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              Nirantara Narmada <FaArrowRightLong className="ms-3" />
+            </h4>
           </div>
-          {/* counter value*/}
-          <div>
-            <CountdownCard {...countdownValues} />
+          <div className="d-flex mt-5">
+            <h4 className="custom-text display-6">
+              20 <br /> sep
+            </h4>
+            <h4
+              className="custom-text ms-5 display-6 mt-3"
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+              onClick={handleButtonClick}
+            >
+              Ganesh uttsav <FaArrowRightLong className="ms-3" />
+            </h4>
           </div>
         </div>
+      </div>
+    </Col>
+    {/* Right section */}
+    <Col lg={6} md={12}>
+      <div className="position-relative"> {/* Add position-relative class */}
+        <img
+          src={AboutR}
+          className="img-fluid"
+          alt="About R"
+          style={{ maxWidth: "312px", maxHeight: "424px" }}
+        />
+      </div>
+    </Col>
+  </Row>
+  {/* Counter value */}
+  <Row className="justify-content-center">
+    <Col lg={6} md={12}>
+      <CountdownCard {...countdownValues} />
+    </Col>
+  </Row>
+</Container>
+
 
         {/* Card section */}
         {showCard && (
-          <div className="d-flex justify-content-end">
+          <div className="d-flex justify-content-center">
             <div
-              className="card p-5 text-white bg-dark "
-              style={{ width: "620px", height: "600px" }}
+              className="card p-5 text-white bg-dark"
+              style={{
+                width: "100%",
+                maxWidth: "620px",
+                height: "auto",
+              }}
             >
               <h3 className="d-flex justify-content-center align-items-center mt-4">
                 Events Details
@@ -165,10 +184,9 @@ function Events() {
               </p>
               <button
                 style={{
-                  width: "413px",
+                  width: "100%", // Set button width to 100%
                   height: "60px",
                   backgroundColor: "#FCB541",
-                  // color: '#ffffff',
                   borderRadius: "10px",
                   border: "none",
                   fontSize: "16px",
@@ -187,22 +205,28 @@ function Events() {
         {/* Events baground */}
 
         <div style={sectionStyle}>
-          <img src={eveImg} alt="Your Image Description" style={imgStyle} />
-          <div style={contentStyle}>
-            <h1
-              className="display-1 mb-5"
-              data-aos="fade-up"
-              data-aos-duration="2800"
-              style={{ fontWeight: "700",fontFamily:'Oswald' }}
-            >
-              Festivals of Kalasindhu
-            </h1>
-            <p data-aos="fade-up" data-aos-duration="3000">
-              Lorem ipsum dolor sit amet consectetur. Odio elementum dignissim
-              purus maecenas bibendum urna viverra odio. Amet id felis
-              condimentum eget fringilla tempor et nunc ipsum..
-            </p>
-          </div>
+          <Container>
+            <img src={eveImg} alt="Your Image Description" style={imgStyle} />
+            <div style={contentStyle}>
+              <h1
+                className="custom-text2 display-1 mb-5"
+                data-aos="fade-up"
+                data-aos-duration="2800"
+                style={{ fontWeight: "700", fontFamily: "Oswald" }}
+              >
+                Festivals of Kalasindhu
+              </h1>
+              <p
+                className="custom-text"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                Lorem ipsum dolor sit amet consectetur. Odio elementum dignissim
+                purus maecenas bibendum urna viverra odio. Amet id felis
+                condimentum eget fringilla tempor et nunc ipsum..
+              </p>
+            </div>
+          </Container>
         </div>
 
         {/* <section className='hero-wrapper position-relative mb-4'>
@@ -210,6 +234,7 @@ function Events() {
                     <div className='hero-overlay d-flex align-items-center justify-content-center'></div>
                 </section> */}
         <div
+          className="container-fluid"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -221,10 +246,16 @@ function Events() {
           }}
         >
           <h1
-            style={{ fontSize: "80px", marginRight: "70px", marginTop: "20px",fontFamily:'Oswald' }}
+            className=""
+            style={{
+              fontSize: "80px",
+              marginRight: "70px",
+              marginTop: "20px",
+              fontFamily: "Oswald",
+            }}
             data-aos="fade-left"
             data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
+            data-aos-easing="ease-in"
           >
             Navarasa Navaratri
           </h1>
@@ -255,10 +286,11 @@ function Events() {
                     height: "600px",
                   }}
                 >
-                  <marquee loop="infinite"
+                  <marquee
+                    loop="infinite"
                     style={{
-                      fontFamily:'Oswald',
-                      loop:'infinite',
+                      fontFamily: "Oswald",
+                      loop: "infinite",
                       height: "700px",
                       width: "800px",
                       transform:
@@ -277,7 +309,7 @@ function Events() {
           </div>
           <div
             className="text-light"
-            style={{ width: "512px", height: "408px", fontFamily:'Open Sans' }}
+            style={{ width: "512px", height: "408px", fontFamily: "Open Sans" }}
           >
             <div style={{ marginBottom: "50px" }}>
               <h3 data-aos="fade-up" data-aos-duration="3000">
@@ -323,7 +355,10 @@ function Events() {
                     <div className='hero-overlay d-flex align-items-center justify-content-center'></div>
                 </section> */}
 
-        <div style={{ height: "800px", background: "#003D1B" }}>
+        <div
+          className="container-fluid"
+          style={{ height: "800px", background: "#003D1B" }}
+        >
           <div className="d-flex justify-content-between">
             <div>
               <img src={EventsG2} style={{ height: "500px" }} />
@@ -331,7 +366,11 @@ function Events() {
 
             <div style={{ width: "799px", height: "152px", marginTop: "30px" }}>
               <h1
-                style={{ fontSize: "80px", color: "#94B074",fontFamily:'Oswald' }}
+                style={{
+                  fontSize: "80px",
+                  color: "#94B074",
+                  fontFamily: "Oswald",
+                }}
                 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1500"
@@ -339,7 +378,12 @@ function Events() {
                 Navarasa Navaratri
               </h1>
               <p
-                style={{ fontSize: "22px", color: "wheat", marginTop: "80px",fontFamily:'Open Sans  ' }}
+                style={{
+                  fontSize: "22px",
+                  color: "wheat",
+                  marginTop: "80px",
+                  fontFamily: "Open Sans  ",
+                }}
                 data-aos="fade-up"
                 data-aos-easing="linear"
                 data-aos-duration="2500"
@@ -369,7 +413,8 @@ function Events() {
                     height: "600px",
                   }}
                 >
-                  <marquee loop="infinite"
+                  <marquee
+                    loop="infinite"
                     style={{
                       height: "700px",
                       width: "700px",
@@ -387,7 +432,8 @@ function Events() {
               </div>
             </section>
           </div>
-          <marquee loop="infinite"
+          <marquee
+            loop="infinite"
             style={{
               height: "200px",
               width: "80%",
@@ -408,16 +454,21 @@ function Events() {
               <div className="row">
                 <div className="col-lg-6">
                   <h1
-                    className="text-white fw-bolder mt-5"
-                    style={{ fontSize: "64px", fontWeight: "600",fontFamily:'Oswald' }}
+                    className="custom-text2 text-white fw-bolder mt-5"
+                    style={{
+                      fontSize: "64px",
+                      fontWeight: "600",
+                      fontFamily: "Oswald",
+                    }}
                     data-aos="fade-down"
                     data-aos-easing="linear"
                     data-aos-duration="1500"
                   >
                     Workshops and other events
                   </h1>
-                  <p style={{fontFamily:'Open sans',fontSize:'22px'}}
-                    className="text-white mt-3"
+                  <p
+                    style={{ fontFamily: "Open sans", fontSize: "22px" }}
+                    className="custom-text text-white mt-3"
                     data-aos="fade-up"
                     data-aos-easing="linear"
                     data-aos-duration="1500"
@@ -430,27 +481,28 @@ function Events() {
                     mauris et in purus ut.
                   </p>
                   <a
-                    className="btn btn-lg  rounded "
+                    className="btn btn-lg rounded"
                     style={{
                       width: "254px",
                       background: "#FCB541",
+                      fontWeight: "600",
                       marginTop: "20px",
-                      fontWeight:'600'
                     }}
                   >
-                  Collaborate with us
+                    Collaborate with us
                   </a>
                 </div>
-                <div className="col-lg-6 d-flex justify-content-center align-items-center">
+                <div className="col-lg-6 d-flex justify-content-center align-items-center mt-5 mt-lg-0">
                   <img
                     src={eveImg4}
-                    height={500}
+                    className="img-fluid"
                     alt="Hero Image"
-                    width={527}
+                    style={{ maxWidth: "100%" }}
                   />
                 </div>
               </div>
             </div>
+            
           </div>
         </section>
         <Footer />

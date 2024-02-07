@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../assets/styles/core.css";
-import logo from '../assets/images/logo.png'
+import logo from "../assets/images/logo.png";
 import heroImg from "../assets/images/rsc.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -75,7 +75,7 @@ function Home() {
             <FaYoutube />
           </div>
           <div className="d-flex flex-column justify-content-end">
-            <div style={{fontFamily:'Oswald'}}>
+            <div style={{ fontFamily: "Oswald" }}>
               <h2
                 className="custom-text display-5 p-5 text-white text-center fw-bolder"
                 data-aos="fade-up"
@@ -83,133 +83,118 @@ function Home() {
               >
                 Parampara is like an umbilical cord that connects dancers to the
                 beginnings of their art form.
-                <br/><br/><span className="d-flex justify-content-end">-Poornima Gururaj</span>  
+                <br />
+                <br />
+                <span className="d-flex justify-content-end">
+                  -Poornima Gururaj
+                </span>
               </h2>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="container-12" style={{backgroundColor: "#E8E5E7" }}>
-        <div className="d-flex justify-content-center align-items-center p-5 ">
-          <h1 className="fw-bolder display-4" style={{fontFamily:'Oswald'}}>What's New?</h1>
-        </div>
+      {/* Cards */}
 
-        {/* change based on client */}
-        {/*<div className='d-flex justify-content-center align-items-center p-5'>
+      {/* <section className="container-12" style={{backgroundColor: "#E8E5E7" }}> */}
+      {/* change based on client */}
+      {/*<div className='d-flex justify-content-center align-items-center p-5'>
                     <p className='text-warning mb-5 fs-1 text-center fw-bold'>
                          We will be out with something super exciting soon.. 
                     </p> 
                 </div>*/}
+<section>
+  <h1 className="fw-bolder text-center my-5 display-4" style={{ fontFamily: "Oswald" }}>
+    What's New?
+  </h1>
 
-        <div className="container">
-          <div className="row">
-          <div
-            className="col-lg-12 col-sm-6"
-            style={{ width: "32em", height: "28em", position: "relative", fontFamily:'Open Sans' }}
-            data-aos="fade-right" data-aos-duration="2800"
-          >
-            <div>
-              <img
-                className="rounded-top img-fluid"
-                src={Hcard1}
-                style={{ width: "32em", height: "13.4375em" }}
-              ></img>
-            </div>
-            <div className="circle-date">
-              <p className="circle-date-text">
-                25 th <br />
-                Sept
-              </p>
-            </div>
-            <div className="p-3 mb-2 bg-white text-dark rounded">
-              <h3 className="fw-bold">Nirantara Narmada</h3>
-              <p className="fw-bold">Artist: Smt. Ramavaidyanathan</p>
-              <div>
-                <div className="d-flex justify-content-start">
-                  <SlCalender className="mt-1" />{" "}
-                  <p className="ms-2 mb-2">Sunday, 5th Sept, 2023</p>
-                </div>
-
-                <div className="d-flex justify-content-start ">
-                  <FaRegClock className="mt-1" />{" "}
-                  <p className="ms-2">6:00 PM</p>
-                </div>
-
-                <div className="d-flex justify-content-start ">
-                  <IoLocationOutline className="mt-1" />{" "}
-                  <p className="ms-2">JSS auditorium, Jayanagar, Bangalore</p>
-                </div>
-                <div className="d-flex justify-content-between align-item-center">
-                  <a
-                    href="http://localhost:3000/events"
-                    className="fw-bold"
-                    style={{ textDecoration: "none", color: "black" }}
-                  >
-                    more info <GoArrowUpRight />
-                  </a>
-                  <p className="fw-bold">FREE</p>
-                </div>
-              </div>
-            </div>
+  <div className="container-fluid d-flex justify-content-center">
+    <div className="row">
+      <div className="col-lg-6 col-md-12 mb-4" style={{ maxWidth: "28rem", position: "relative", fontFamily: "Open Sans" }} data-aos="fade-right" data-aos-duration="2800">
+        {/* Card 1 */}
+        <div className="card-wrapper">
+          <div>
+            <img className="rounded-top img-fluid" src={Hcard1}></img>
           </div>
-
-          <div
-            className="col-lg-12 col-sm-6"
-            style={{ width: "32em", height: "28em", position: "relative", fontFamily:'Open Sans' }}
-            data-aos="fade-left" data-aos-duration="2800"
-          >
+          <div className="circle-date ">
+            <p className="circle-date-text ">
+              25 th <br />
+              Sept
+            </p>
+          </div>
+          <div className="p-3 mb-2 bg-white text-dark rounded">
+            <h3 className="fw-bold">Nirantara Narmada</h3>
+            <p className="fw-bold">Artist: Smt. Ramavaidyanathan</p>
             <div>
-              <img
-                className="rounded-top img-fluid"
-                src={Hcard2}
-                style={{ width: "32em", height: "13.4375em" }}
-              ></img>
-            </div>
-            <div className="circle-date">
-              <p className="circle-date-text">
-                25 th <br />
-                Sept
-              </p>
-            </div>
-            <div className="p-3 mb-2 bg-white text-dark rounded">
-              <h3 className="fw-bold">Nirantara Narmada</h3>
-              <p className="fw-bold">Artist: Smt. Ramavaidyanathan</p>
-              <div>
-                <div className="d-flex justify-content-start">
-                  <SlCalender className="mt-1" />{" "}
-                  <p className="ms-2 mb-2">Sunday, 5th Sept, 2023</p>
-                </div>
-
-                <div className="d-flex justify-content-start ">
-                  <FaRegClock className="mt-1" />{" "}
-                  <p className="ms-2">6:00 PM</p>
-                </div>
-
-                <div className="d-flex justify-content-start ">
-                  <IoLocationOutline className="mt-1" />{" "}
-                  <p className="ms-2">JSS auditorium, Jayanagar, Bangalore</p>
-                </div>
-                <div className="d-flex justify-content-between align-item-center">
-                  <a
-                    href="http://localhost:3000/events"
-                    className="fw-bold"
-                    style={{ textDecoration: "none", color: "black" }}
-                  >
-                    more info <GoArrowUpRight />
-                  </a>
-                  <p className="fw-bold">FREE</p>
-                </div>
+              <div className="d-flex justify-content-start">
+                <SlCalender className="mt-1" />{" "}
+                <p className="ms-2 mb-2">Sunday, 5th Sept, 2023</p>
               </div>
-            </div>
+              <div className="d-flex justify-content-start">
+                <FaRegClock className="mt-1" />{" "}
+                <p className="ms-2">6:00 PM</p>
+              </div>
+              <div className="d-flex justify-content-start">
+                <IoLocationOutline className="mt-1" />{" "}
+                <p className="ms-2">JSS auditorium, Jayanagar, Bangalore</p>
+              </div>
+              <div className="d-flex justify-content-between align-item-center">
+                <a href="http://localhost:3000/events" className="fw-bold" style={{ textDecoration: "none", color: "black" }}>
+                  more info <GoArrowUpRight />
+                </a>
+                <p className="fw-bold">FREE</p>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+      <div className="col-lg-6 col-md-12 mb-4" style={{ maxWidth: "28rem", position: "relative", fontFamily: "Open Sans" }} data-aos="fade-left" data-aos-duration="2800">
+        {/* Card 2 */}
+        <div className="card-wrapper">
+          <div>
+            <img className="rounded-top img-fluid" src={Hcard2}></img>
+          </div>
+          <div className="circle-date">
+            <p className="circle-date-text">
+              25 th <br />
+              Sept
+            </p>
+          </div>
+          <div className="p-3 mb-2 bg-white text-dark rounded">
+            <h3 className="fw-bold">Nirantara Narmada</h3>
+            <p className="fw-bold">Artist: Smt. Ramavaidyanathan</p>
+            <div>
+              <div className="d-flex justify-content-start">
+                <SlCalender className="mt-1" />{" "}
+                <p className="ms-2 mb-2">Sunday, 5th Sept, 2023</p>
+              </div>
+              <div className="d-flex justify-content-start">
+                <FaRegClock className="mt-1" />{" "}
+                <p className="ms-2">6:00 PM</p>
+              </div>
+              <div className="d-flex justify-content-start">
+                <IoLocationOutline className="mt-1" />{" "}
+                <p className="ms-2">JSS auditorium, Jayanagar, Bangalore</p>
+              </div>
+              <div className="d-flex justify-content-between align-item-center">
+                <a href="http://localhost:3000/events" className="fw-bold" style={{ textDecoration: "none", color: "black" }}>
+                  more info <GoArrowUpRight />
+                </a>
+                <p className="fw-bold">FREE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* <!-- why --> */}
       <section
-        className="p-5"
+        className="container-fluid"
         style={{
           backgroundImage: `url(${bgImg})`,
           backgroundSize: "cover",
@@ -226,7 +211,7 @@ function Home() {
                   className="display-6 text-white "
                   data-aos="fade-up"
                   data-aos-duration="1500"
-                  style={{fontFamily:'Oswald'}}
+                  style={{ fontFamily: "Oswald" }}
                 >
                   Why choose Kalasindhu Academy?
                 </p>
@@ -244,7 +229,7 @@ function Home() {
             <div className="col-lg-6  mt-3">
               <div
                 className="accordion"
-                style={{ border: "none",fontFamily:'Open Sans' }}
+                style={{ border: "none", fontFamily: "Open Sans" }}
                 id="accordionExample"
               >
                 <div
@@ -278,8 +263,8 @@ function Home() {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                      <p style={{fontFamily:'Open Sans'}}>
-                        From a young age,students nare taught to embrace the
+                      <p style={{ fontFamily: "Open Sans" }}>
+                        From a young age,students are taught to embrace the
                         fusion of practical knowledge and theory in dance.they
                         are immersed in studying dance texts, crafting their own
                         narratives, and continuously expanding her understanding
@@ -447,16 +432,21 @@ function Home() {
 
       {/* <!-- video --> */}
       <section
+        className="container-fluid"
         style={{
           backgroundColor: "rgb(14, 14, 14)",
           height: "100vh",
-          paddingTop: "8.5em",
+          paddingTop: "5.5em",
         }}
       >
         <div className="container p-3 align-middle">
           <h2
             className="text-center mt-4"
-            style={{ color: "rgba(197, 158, 112, 1)" , fontSize:'48px',fontFamily:'Oswald'}}
+            style={{
+              color: "rgba(197, 158, 112, 1)",
+              fontSize: "48px",
+              fontFamily: "Oswald",
+            }}
           >
             Glimpse of Kalasindhu
           </h2>
@@ -466,8 +456,8 @@ function Home() {
             data-aos-duration="1400"
           >
             <iframe
-              width="1026"
-              height="522"
+              width="700"
+              height="322"
               src="https://www.youtube.com/embed/jG2AciJ3zHY?si=IXTvnkZw4Z3v4W_l"
               title="YouTube video player"
               frameborder="0"
@@ -481,20 +471,50 @@ function Home() {
 
       {/* <!-- contact --> */}
       <section
-        style={{ backgroundColor: "#330A0A", paddingTop: "8em", height:'931px' }}
+        style={{
+          backgroundColor: "#330A0A",
+          paddingTop: "8em",
+          paddingBottom: "4em",
+        }}
+      >
+        <h1
+          className="text-center custom-text1 mb-4"
+          style={{ color: "#C59E70", fontFamily: "Oswald", fontSize: "48px" }}
         >
-        <h1 style={{color:'#C59E70', textAlign:'center',fontFamily:'Oswald', fontSize:'48px '}}>Pick one way, to get in touch..</h1>
-        <div class="container p-5 map d-flex justify-content-between">
-          <div >
+          Pick one way to get in touch..
+        </h1>
+        <div className="container-fluid p-5 map d-flex flex-column flex-lg-row justify-content-between">
+          <div className="mb-5 mb-lg-0">
+            <div className="">
+              <ul className="list-unstyled footer-link mt-4 display-2">
+                <li>
+                  <a
+                    href="tel:+919900579347"
+                    className="text-white text-decoration-none"
+                  >
+                    <i className="bi bi-telephone me-2"></i> Whatsapp us or call
+                    us at 9900579347{" "}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:Kalasindhu@gmail.com"
+                    className="text-white text-decoration-none"
+                  >
+                    <i className="bi bi-envelope me-2"></i> If you are old
+                    school, then email us at Kalasindhu@gmail.com{" "}
+                  </a>
+                </li>
+                <li>
+                  <a href=" " className="text-white text-decoration-none">
+                    <i className="bi bi-instagram me-2"></i>Social media lover ?
+                    Stalk our page and DM us at Kalasindhu Academy{" "}
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div className="">
-            <ul className="list-unstyled footer-link mt-4 display-2">
-              <li><a href="tel:+91 9900579347" style={{fontSize:'25px'}}> <i className="bi bi-telephone me-2"></i> Whatsapp us or call us at 9900579347 </a></li>
-              <li><a href="mailto:Kalasindhu@gmail.com" style={{fontSize:'25px'}}><i className="bi bi-envelope me-2"></i> If you are old school, then email us at Kalasindhu@gmail.com </a></li>
-              <li><a href=" "style={{fontSize:'25px'}}> <i className="bi bi-instagram me-2" ></i>Social media lover ? Stalk our page and Dm us at Kalasindhu Academy </a></li>
-            </ul>
-          </div>
-          </div>
-          <div class="">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.610553407524!2d77.55541367472718!3d12.932733715729922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e2615f2180b%3A0x36301a3a3787ae2a!2sKalasindhu%20Academy%20for%20Dance%20and%20Related%20Arts!5e0!3m2!1sen!2sin!4v1690896701490!5m2!1sen!2sin"
               width="465"
@@ -504,19 +524,58 @@ function Home() {
               referrerpolicy="no-referrer-when-downgrade"
               className="text-center rounded"
             ></iframe>
-            <p class="text-left text-white mt-3" style={{width:'465px'}}>Come visit us at this location. We are open on mondays, wednesdays and fridays from 5 pm to 8 pm and on weekends </p>
+            <p
+              className="text-left text-white mt-3"
+              style={{ maxWidth: "100%", width: "465px" }}
+            >
+              Come visit us at this location. We are open on Mondays,
+              Wednesdays, and Fridays from 5 pm to 8 pm and on weekends.
+            </p>
           </div>
         </div>
-        <div className='d-flex justify-content-around align-items-center' style={{width:'1341px', height:'140px', backgroundColor:'#FCB541', borderRadius:'15px', marginLeft:'290px', marginTop:'40px'}}>
-          <div>
-            <b style={{fontSize:'36px'}}>Kalasindhu Community</b>
-            <p style={{fontSize:'20px'}}>Join our Whatsapp community and never miss any update on our workshops or events</p>
-          </div>
-          <div style={{width:'312px', height:'59px', backgroundColor:'#0E0E0E', color:'#FCB541',borderRadius:'15px' }} className="d-flex align-items-center ">
-            <a style={{fontSize:'18px', padding:'70px',fontWeight:'500'}}>Join whatsapp group</a>
+
+        <div className="container-fluid">
+          <div
+            className="d-flex flex-column flex-lg-row justify-content-around align-items-center"
+            style={{
+              maxWidth: "1341px",
+              margin: "0 auto",
+              backgroundColor: "#FCB541",
+              borderRadius: "15px",
+              marginTop: "40px",
+              padding: "20px", // Add padding for better spacing
+            }}
+          >
+            <div className="mb-lg-3">
+              <b className="fs-4 fs-lg-2" style={{ fontSize: "36px" }}>
+                Kalasindhu Community
+              </b>
+              <p className="fs-5 fs-lg-3" style={{ fontSize: "20px" }}>
+                Join our Whatsapp community and never miss any update on our
+                workshops or events
+              </p>
+            </div>
+            <div className="d-flex align-items-center">
+              <a
+                href="#"
+                className="fs-4 fs-lg-3"
+                style={{
+                  fontSize: "18px",
+                  padding: "10px 30px", // Default padding
+                  fontWeight: "500",
+                  backgroundColor: "#0E0E0E",
+                  color: "#FCB541",
+                  borderRadius: "15px",
+                  textDecoration: "none",
+                }}
+              >
+                Join Whatsapp Group
+              </a>
+            </div>
           </div>
         </div>
       </section>
+
       <Footer />
     </>
   );

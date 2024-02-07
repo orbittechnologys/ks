@@ -15,10 +15,10 @@ const Team = () => {
   const splideRef = useRef(null);
 
   return (
-    <section style={{ backgroundColor: "rgb(0, 0, 0)", height: "750px" }}>
+    <section className="container-fluid" style={{ backgroundColor: "rgb(0, 0, 0)", height: "750px" }}>
       <div className="container p-5">
         <h2
-          className="text-center mt-4 mb-4"
+          className="text-center custom-text mt-4 mb-4"
           style={{ color: "rgba(197, 158, 112, 1)", fontFamily:'Oswald', fontSize:'48px' }}
         >
         Glimse of Kalasindhu
