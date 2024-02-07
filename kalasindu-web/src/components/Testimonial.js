@@ -9,15 +9,15 @@ const Testimonial = () => {
   const splideRef = useRef(null);
 
   return (
-    <section
+    <section className="container-fluid"
       style={{
         backgroundColor: "rgba(19, 51, 17, 1)",
-        height: "100vh",
+        // height: "100vh",
         paddingTop: "8.5em",
       }}
     >
       <div className="row">
-        <div className="col-lg-5">
+        <div className="col-lg-5 col-sm-2">
           <div className="test-card-left mb-4 mt-4">
             <div className="p-4">
               <p
@@ -33,7 +33,7 @@ const Testimonial = () => {
             <img src={testi} className="img-fluid w-100" />
           </div>
         </div>
-        <div className="col-lg-7">
+        <div className="col-lg-7 col-sm-2">
           <Splide
             options={{
               type: "loop",
@@ -43,11 +43,11 @@ const Testimonial = () => {
             ref={splideRef}
           >
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 " style={{fontFamily:'Open Sans',background:'#1a5032', height:'508px'}}>
+              <div className="text-white test-card p-3 m-5 ">
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
-                <h1 className="mt-0 mb-5">Life skills</h1>
+                <h1 className="mt-0 mb-4">Life skills</h1>
                 <p>
                   {" "}
                   Aside from teaching dance, I like Mam's emphasis on disciple
@@ -62,11 +62,11 @@ const Testimonial = () => {
             </SplideSlide>
 
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 " style={{fontFamily:'Open Sans',background:'#1a5032', height:'508px'}}>
+              <div className="text-white test-card p-3 m-5 " >
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
-                <h1 className="mt-0 mb-5">Truly meticulous</h1>
+                <h1 className="mt-0 mb-4">Truly meticulous</h1>
                 <p>
                   {" "}
                   I CONGRATULATE Poornima and her team of friends and colleagues
@@ -79,11 +79,11 @@ const Testimonial = () => {
             </SplideSlide>
 
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 " style={{fontFamily:'Open Sans',background:'#1a5032',height:'508px'}}>
+              <div className="text-white test-card p-3 m-5 ">
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
-                <h1 className="mt-0 mb-5"> Well crafted</h1>
+                <h1 className="mt-0 mb-4"> Well crafted</h1>
                 <p>
                   {" "}
                   Poornima’s students showcased the style with well practiced
@@ -97,7 +97,7 @@ const Testimonial = () => {
             </SplideSlide>
 
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 " style={{fontFamily:'Open Sans',background:'#1a5032',height:'508px'}}>
+              <div className="text-white test-card p-3 m-5 " >
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
@@ -115,7 +115,7 @@ const Testimonial = () => {
             </SplideSlide>
 
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 " style={{fontFamily:'Open Sans',background:'#1a5032',height:'508px'}}>
+              <div className="text-white test-card p-3 m-5 ">
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
@@ -133,7 +133,7 @@ const Testimonial = () => {
             </SplideSlide>
 
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 " style={{fontFamily:'Open Sans',background:'#1a5032',height:'508px'}}>
+              <div className="text-white test-card p-3 m-5 ">
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
@@ -152,7 +152,7 @@ const Testimonial = () => {
             </SplideSlide>
 
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 "style={{fontFamily:'Open Sans',background:'#1a5032',height:'508px'}}>
+              <div className="text-white test-card p-3 m-5 ">
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
@@ -171,7 +171,7 @@ const Testimonial = () => {
             </SplideSlide>
 
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 "style={{fontFamily:'Open Sans',background:'#1a5032',height:'508px'}}>
+              <div className="text-white test-card p-3 m-5 ">
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>
@@ -189,7 +189,7 @@ const Testimonial = () => {
             </SplideSlide>
 
             <SplideSlide className="me-3">
-              <div className="text-white test-card p-3 m-5 "style={{fontFamily:'Open Sans',background:'#1a5032',height:'508px'}}>
+              <div className="text-white test-card p-3 m-5 ">
                 <span className="text-white custom-font mb-0 mt-0 display-1">
                   "
                 </span>

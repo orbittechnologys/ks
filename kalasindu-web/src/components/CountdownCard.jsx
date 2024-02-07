@@ -37,7 +37,7 @@ const CountdownCard = ({ days, hours, minutes, seconds }) => {
         clearInterval(interval);
         localStorage.removeItem('countdownEndTime');
         localStorage.removeItem('timeLeft');
-        // You can perform any action when the timer expires
+        
       }
     }, 1000);
 
@@ -45,38 +45,43 @@ const CountdownCard = ({ days, hours, minutes, seconds }) => {
   }, [endTime, timeLeft]);
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'space-evenly',
-        alignItems: 'center',
-        width: '525px',
-        height: '105px',
-        backgroundColor: '#FCB541',
-        padding: '15px',
-        borderRadius: '8px',
-        boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
-        marginLeft: '1220px',
-        marginTop: '20px',
-      }}
-    >
-      <div style={{ textAlign: 'center' }}>
-        <span style={{ fontSize: '32px', fontWeight: 'bold', color: '#000000' }}>{timeLeft.days}</span><br />
-        <span style={{ fontSize: '18px', color: '#000000' }}>days</span>
-      </div>
-      <div style={{ textAlign: 'center' }}>
-        <span style={{ fontSize: '32px', fontWeight: 'bold', color: '#000000' }}>{timeLeft.hours}</span><br />
-        <span style={{ fontSize: '18px', color: '#000000' }}>hours</span>
-      </div>
-      <div style={{ textAlign: 'center' }}>
-        <span style={{ fontSize: '32px', fontWeight: 'bold', color: '#000000' }}>{timeLeft.minutes}</span><br />
-        <span style={{ fontSize: '18px', color: '#000000' }}>minutes</span>
-      </div>
-      <div style={{ textAlign: 'center' }}>
-        <span style={{ fontSize: '32px', fontWeight: 'bold', color: '#000000' }}>{timeLeft.seconds}</span><br />
-        <span style={{ fontSize: '18px', color: '#000000' }}>seconds</span>
-      </div>
-    </div>
+    <div className='mb-4'
+  style={{
+    display: 'flex',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    width: '100%', // Set width to 100% for mobile screens
+    height: 'auto', // Set height to auto for mobile screens
+    backgroundColor: '#FCB541',
+    padding: '15px',
+    // marginBottom:'20px',
+    borderRadius: '8px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+    overflow:'hidden',
+    // Add media query for adjusting styles for larger screens
+    '@media (min-width: 768px)': {
+      width: '525px', // Adjust width for larger screens
+      height: '105px', // Adjust height for larger screens
+    }
+  }}
+>
+  <div style={{ textAlign: 'center' }}>
+    <span style={{ fontSize: '32px', fontWeight: 'bold', color: '#000000' }}>{timeLeft.days}</span><br />
+    <span style={{ fontSize: '18px', color: '#000000' }}>days</span>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <span style={{ fontSize: '32px', fontWeight: 'bold', color: '#000000' }}>{timeLeft.hours}</span><br />
+    <span style={{ fontSize: '18px', color: '#000000' }}>hours</span>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <span style={{ fontSize: '32px', fontWeight: 'bold', color: '#000000' }}>{timeLeft.minutes}</span><br />
+    <span style={{ fontSize: '18px', color: '#000000' }}>minutes</span>
+  </div>
+  <div style={{ textAlign: 'center' }}>
+    <span style={{ fontSize: '32px', fontWeight: 'bold', color: '#000000' }}>{timeLeft.seconds}</span><br />
+    <span style={{ fontSize: '18px', color: '#000000' }}>seconds</span>
+  </div>
+</div>
   );
 };
 

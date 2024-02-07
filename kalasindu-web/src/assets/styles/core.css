@@ -320,6 +320,7 @@
 /* Add the following CSS to your stylesheets or inline style */
 .hero-wrapper {
     position: relative;
+    margin-top: 60px;
 }
 
 .hero-overlay {
@@ -359,6 +360,23 @@
     font-weight: bold;
     padding: 20px;
 }
+
+.test-card {
+    height: 518px;
+    font-family: Open Sans;
+    background: #1A5032; /* Set your default height here */
+  }
+  
+.test-card h1 {
+    font-size: 2rem; /* Set your default font size for h1 here */
+  }
+  
+.test-card p {
+    font-size: 1rem; /* Set your default font size for p here */
+    /* Add word-wrap and overflow-wrap properties */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
 
 @media (max-width: 768px) {
     .splide__slide figcaption {
@@ -415,4 +433,57 @@
         width: 300px;
         margin-bottom: 45px;
     }
+    
+    .social-icon {
+        font-size: 16px !important; 
+    }
+
+    .custom-text1 {
+        font-size: 2rem !important;
+    }
+    .custom-text2 {
+        font-size: 2.5rem !important;
+    }
+
+    .custom-text {
+        font-size: 1.5rem !important;
+    }
+
+    .custom-text span {
+        font-size: 1.5rem !important; 
+    }
+    .circle-date {
+        width: 4em; /* Set a smaller width for mobile devices */
+        height: 4em; /* Set a smaller height for mobile devices */
+    }
+    
+    .circle-date-text {
+        font-size: 0.8em; /* Set a smaller font size for mobile devices */
+    }
+    .test-card {
+        height: auto; /* Set auto height for mobile devices */
+      }
+    
+    .test-card h1 {
+        font-size: 1rem; /* Set a smaller font size for h1 on mobile devices */
+      }
+    
+    .test-card p {
+        font-size: 0.7rem; /* Set a smaller font size for p on mobile devices */
+      }
+    .d-flex.align-items-center a.fs-4 {
+        padding: 8px 15px !important; /* Adjusted padding for mobile devices */
+    }
+    .hero-overlay .btn.btn-lg {
+        width: 200px !important; /* Adjust the width as needed */
+        font-size: 12px; /* Adjust the font size as needed */
+    }
+    .container-fluid > div {
+        flex-direction: column;
+        padding: 10px; /* Adjust the padding as needed */
+      }
+      .container-fluid > div > div {
+        margin-bottom: 20px; /* Add margin between elements */
+        text-align: center; /* Center align the content */
+      }
 }
